@@ -94,6 +94,7 @@ TOTAL_MARKS = sum(c["max"] for c in COMPONENTS)
 def default_evaluation():
     return {
         "scores": {c["name"]:{crit:0 for crit,_ in c["criteria"]} for c in COMPONENTS},
+        "phase_totals": {c["name"]:0 for c in COMPONENTS},
         "checklist": {c["name"]:{item:False for item in c["checks"]} for c in COMPONENTS},
         "remarks": {c["name"]:"" for c in COMPONENTS},
         "submission_checks": {item:False for item in SUBMISSION_ITEMS},
@@ -269,6 +270,25 @@ def get_evaluation(roll):
             if isinstance(defaults[section][cname],dict):
                 for key,value in defaults[section][cname].items():
                     saved[section][cname].setdefault(key,value)
+    # Migrate legacy criterion-level scores to one phase total on first load.
+    # New edits are stored only as phase totals; criteria remain read-only guidance.
+    saved.setdefault("phase_totals", {})
+    for comp in COMPONENTS:
+        cname = comp["name"]
+        if cname not in saved["phase_totals"]:
+            legacy_scores = saved.get("scores", {}).get(cname, {})
+            saved["phase_totals"][cname] = min(
+                comp["max"], sum(float(legacy_scores.get(criterion, 0) or 0) for criterion, _ in comp["criteria"])
+            )
+        try:
+            saved["phase_totals"][cname] = max(0, min(comp["max"], int(float(saved["phase_totals"][cname] or 0))))
+        except (TypeError, ValueError):
+            saved["phase_totals"][cname] = 0
+        # Criterion marks are no longer part of the scoring workflow. Clear old
+        # criterion values after preserving their sum as the phase total.
+        saved.setdefault("scores", {}).setdefault(cname, {})
+        for criterion, _ in comp["criteria"]:
+            saved["scores"][cname][criterion] = 0
     for key,value in defaults.items():
         saved.setdefault(key,value)
     for item,value in defaults["submission_checks"].items():
@@ -281,8 +301,20 @@ def save_evaluation(roll,ev):
         con.execute("INSERT OR REPLACE INTO evaluations(roll_no,evaluation_json,updated_at) VALUES (?,?,?)",
                     (roll,json.dumps(ev,ensure_ascii=False),ev["last_updated"]))
 
+def phase_total(ev, component_name):
+    """Return the saved phase score, with compatibility for older evaluation objects."""
+    value = ev.get("phase_totals", {}).get(component_name)
+    if value is None:
+        component = next((c for c in COMPONENTS if c["name"] == component_name), None)
+        if not component:
+            return 0
+        value = sum(float(ev.get("scores", {}).get(component_name, {}).get(criterion, 0) or 0)
+                    for criterion, _ in component["criteria"])
+    return float(value or 0)
+
+
 def marks_total(ev):
-    return sum(sum(float(v) for v in ev["scores"][c["name"]].values()) for c in COMPONENTS)
+    return sum(phase_total(ev, c["name"]) for c in COMPONENTS)
 
 
 def generate_overall_feedback(ev):
@@ -297,16 +329,13 @@ def generate_overall_feedback(ev):
         component_name = component["name"]
         component_max = component["max"]
         score_map = ev.get("scores", {}).get(component_name, {})
-        component_score = sum(float(score_map.get(criterion, 0) or 0) for criterion, _ in component["criteria"])
+        component_score = phase_total(ev, component_name)
         awarded_total += component_score
         maximum_total += component_max
         any_marks = any_marks or component_score > 0
         component_pct = (component_score / component_max * 100) if component_max else 0
         component_results.append((component_name, component_score, component_max, component_pct))
 
-        for criterion, criterion_max in component["criteria"]:
-            score = float(score_map.get(criterion, 0) or 0)
-            criterion_results.append((component_name, criterion, score, criterion_max, score / criterion_max if criterion_max else 0))
 
     if not any_marks:
         message = "No marks have been recorded yet. Enter and save marks across the evaluation phases to generate an overall summary."
@@ -324,22 +353,13 @@ def generate_overall_feedback(ev):
     if best[1] > 0 and not strong_components:
         strengths.append(f"Current strongest component: {best[0]}.")
 
-    # Show strong criteria as a simple checklist; deliberately omit all marks and percentages.
-    strong_criteria = [item for item in criterion_results if item[4] >= 0.8 and item[2] > 0]
-    for component_name, criterion, score, maximum, ratio in strong_criteria[:8]:
-        strengths.append(f"{criterion} — {component_name}.")
-
     low_components = [item for item in component_results if item[3] < 60]
     if low_components:
         names = ", ".join(f"{name} ({score:g}/{maximum}, {pct:.0f}%)" for name, score, maximum, pct in sorted(low_components, key=lambda item: item[3]))
         improvements.append(f"Components needing attention (below 60%): {names}.")
 
-    low_criteria = [item for item in criterion_results if item[4] < 0.5]
-    for component_name, criterion, score, maximum, ratio in low_criteria[:6]:
-        improvements.append(f"Review '{criterion}' in {component_name} ({score:g}/{maximum}); strengthen the implementation or supporting explanation.")
-
     if awarded_total < maximum_total * 0.6:
-        improvements.insert(0, f"Overall score is {awarded_total:g}/{maximum_total} ({awarded_total / maximum_total * 100:.0f}%). Prioritize the lowest-scoring criteria before final submission.")
+        improvements.insert(0, f"Overall score is {awarded_total:g}/{maximum_total} ({awarded_total / maximum_total * 100:.0f}%). Prioritize the lowest-scoring phases before final submission.")
 
     if not strengths:
         strengths.append("Marks have been entered, but no component has reached the strong-performance threshold yet. Continue recording marks as the project is assessed.")
@@ -916,7 +936,7 @@ if page=="Dashboard":
         pending_count += int(score <= 0)
         evaluations.append((student, evaluation, score))
         for component in COMPONENTS:
-            component_totals[component["name"]] += sum(float(v) for v in evaluation["scores"][component["name"]].values())
+            component_totals[component["name"]] += phase_total(evaluation, component["name"])
     average_marks = total_marks / total_students if total_students else 0
     evaluation_rate = evaluated_count / total_students * 100 if total_students else 0
     project_titles_count = int(students_df["ml_project_title"].fillna("").astype(str).str.strip().ne("").sum()) if total_students else 0
@@ -1484,58 +1504,38 @@ elif page=="Project Group Details":
                             bulk_roll = str(bulk_student["roll_no"])
                             bulk_evaluations[bulk_roll] = get_evaluation(bulk_roll)
                             bulk_rows.append((bulk_roll, str(bulk_student["student_name"])))
-                        # Header and per-student summary, constrained to the current project group (max 3 partners).
-                        header_cols = st.columns([2.6] + [1] * len(bulk_rows), gap="small")
-                        header_cols[0].markdown("**Assessment criterion**")
-                        for col, (bulk_roll, bulk_name) in zip(header_cols[1:], bulk_rows):
-                            col.markdown(f"**{html.escape(bulk_name)}**")
-                            col.caption(f"Roll {html.escape(bulk_roll)}")
-                        st.divider()
+                        # Compact phase view: omit the repeated assessment-criterion/student header.
+                        st.markdown("#### Evaluation criteria")
+                        st.caption("Use these criteria as a reference. Enter only one total score per student for this phase.")
                         for bulk_j, (bulk_criterion, bulk_maxmark) in enumerate(bulk_comp["criteria"]):
-                            criterion_cols = st.columns([2.6] + [1] * len(bulk_rows), gap="small", vertical_alignment="center")
-                            with criterion_cols[0]:
-                                st.markdown(f"**{bulk_j+1}. {html.escape(bulk_criterion)}**")
-                                st.caption(f"Maximum: {bulk_maxmark} marks per student")
-                            for student_col, (bulk_roll, bulk_name) in zip(criterion_cols[1:], bulk_rows):
-                                score_key = f"bulk_score_{selected_group}_{bulk_roll}_{bulk_i}_{bulk_j}"
-                                old_score = int(bulk_evaluations[bulk_roll]["scores"][bulk_comp["name"]].get(bulk_criterion, 0))
-                                if score_key not in st.session_state:
-                                    st.session_state[score_key] = old_score
-                                with student_col:
-                                    # Compact score control: red decrement on the left, centered value, green increment on the right.
-                                    control_cols = st.columns([0.72, 1.25, 0.72], gap="small", vertical_alignment="center")
-                                    with control_cols[0]:
-                                        st.button(
-                                            "−", key=f"minus_{score_key}", use_container_width=True,
-                                            disabled=int(st.session_state[score_key]) <= 0,
-                                            on_click=adjust_mark_widget, args=(score_key, -1, bulk_maxmark)
-                                        )
-                                    with control_cols[1]:
-                                        score_value = st.number_input(
-                                            f"{bulk_name} · {bulk_criterion}", min_value=0, max_value=bulk_maxmark, step=1,
-                                            key=score_key, label_visibility="collapsed"
-                                        )
-                                    with control_cols[2]:
-                                        st.button(
-                                            "+", key=f"plus_{score_key}", use_container_width=True,
-                                            disabled=int(st.session_state[score_key]) >= bulk_maxmark,
-                                            on_click=adjust_mark_widget, args=(score_key, 1, bulk_maxmark)
-                                        )
-                                bulk_evaluations[bulk_roll]["scores"][bulk_comp["name"]][bulk_criterion] = int(score_value)
-                            st.markdown("<div class='bulk-criterion-divider'></div>", unsafe_allow_html=True)
+                            st.markdown(
+                                f"**{bulk_j+1}. {html.escape(bulk_criterion)}**  "
+                                f"<span style='color:#7b8798'>· Maximum {bulk_maxmark} marks</span>",
+                                unsafe_allow_html=True
+                            )
                         st.markdown("#### Current phase totals")
                         total_cols = st.columns(len(bulk_rows), gap="small")
                         for col, (bulk_roll, bulk_name) in zip(total_cols, bulk_rows):
-                            phase_total = sum(int(bulk_evaluations[bulk_roll]["scores"][bulk_comp["name"]].get(c, 0)) for c, _ in bulk_comp["criteria"])
+                            total_key = f"bulk_phase_total_{selected_group}_{bulk_roll}_{bulk_i}"
+                            old_total = int(phase_total(bulk_evaluations[bulk_roll], bulk_comp["name"]))
+                            if total_key not in st.session_state:
+                                st.session_state[total_key] = old_total
                             with col:
-                                st.metric(bulk_name, f"{phase_total} / {bulk_comp['max']}")
+                                st.markdown(f"**{html.escape(bulk_name)}**")
+                                st.caption(f"Roll {html.escape(bulk_roll)}")
+                                entered_total = st.number_input(
+                                    f"Phase total for {bulk_name}", min_value=0, max_value=int(bulk_comp["max"]), step=1,
+                                    key=total_key, label_visibility="collapsed"
+                                )
+                            bulk_evaluations[bulk_roll].setdefault("phase_totals", {})[bulk_comp["name"]] = int(entered_total)
+                        
                         if st.button("Save marks for all group partners", key=f"save_bulk_{selected_group}_{bulk_i}", type="primary", use_container_width=True):
                             for bulk_roll, bulk_name in bulk_rows:
                                 save_evaluation(bulk_roll, bulk_evaluations[bulk_roll])
                                 log_activity(
                                     "Group evaluation saved",
                                     f"Saved {bulk_comp['name']} marks for {bulk_name} (Roll {bulk_roll})",
-                                    f"Group {selected_group} · {bulk_comp['name']} · {sum(int(bulk_evaluations[bulk_roll]['scores'][bulk_comp['name']].get(c, 0)) for c, _ in bulk_comp['criteria'])}/{bulk_comp['max']}"
+                                    f"Group {selected_group} · {bulk_comp['name']} · {phase_total(bulk_evaluations[bulk_roll], bulk_comp['name']):.0f}/{bulk_comp['max']}"
                                 )
                             st.success(f"Saved {bulk_comp['name']} marks for all {len(bulk_rows)} group partner(s).")
                             st.rerun()
@@ -1547,7 +1547,7 @@ elif page=="Project Group Details":
                 else:
                     st.divider()
                     st.markdown("### Individual student evaluation")
-                    st.caption("Marks, evidence checklists, and remarks are stored separately for each student.")
+                    st.caption("Phase totals, evidence checklists, and remarks are stored separately for each student. Criteria are read-only guidance.")
 
                     row = students_df[students_df["roll_no"].astype(str) == selected].iloc[0]
                     ev = get_evaluation(selected)
@@ -1575,11 +1575,11 @@ elif page=="Project Group Details":
                     i = render_phase_cards(f"phase_nav_index_{selected}", include_final=True)
                     if i < len(COMPONENTS):
                         comp = COMPONENTS[i]
-                        subtotal = sum(int(ev["scores"][comp["name"]].get(criterion, 0)) for criterion, _ in comp["criteria"])
+                        subtotal = phase_total(ev, comp["name"])
                         percentage = round((subtotal / comp["max"]) * 100) if comp["max"] else 0
                         st.markdown(
                             f'<div class="phase-header"><div><div class="phase-title">{html.escape(comp["name"])}</div>'
-                            f'<div class="phase-subtitle">Maximum: {comp["max"]} marks · Assess each criterion below</div></div>'
+                            f'<div class="phase-subtitle">Maximum: {comp["max"]} marks · Criteria are reference guidance</div></div>'
                             f'<div class="phase-score-card"><div class="phase-score-label">MARKS AWARDED</div>'
                             f'<div class="phase-score-line"><div class="phase-score-number">{subtotal} <span>/ {comp["max"]}</span></div>'
                             f'<div class="phase-progress"><div class="phase-progress-fill" style="width:{percentage}%"></div></div>'
@@ -1606,41 +1606,30 @@ elif page=="Project Group Details":
                                     for qno, question in enumerate(project_viva_questions(row["ml_project_title"], i), 1):
                                         st.markdown(f"**Q{qno}.** {question}")
                                 show_viva_dialog()
+                        st.markdown("#### Evaluation criteria")
+                        st.caption("Criteria are provided as a reference only. Enter the total marks awarded for this phase below.")
                         for j, (criterion, maxmark) in enumerate(comp["criteria"]):
-                            score_key = f"score_{selected}_{i}_{j}"
-                            old = int(ev["scores"][comp["name"]].get(criterion, 0))
-                            if score_key not in st.session_state:
-                                st.session_state[score_key] = old
-                            row_cols = st.columns([0.65, 5.6, 0.55, 0.8, 0.55], gap="small", vertical_alignment="center")
-                            with row_cols[0]:
-                                st.markdown(f'<div class="criterion-number">{j+1}</div>', unsafe_allow_html=True)
-                            with row_cols[1]:
-                                st.markdown(
-                                    f'<div class="criterion-title">{html.escape(criterion)}</div>'
-                                    f'<div class="criterion-max">Out of {maxmark}</div>',
-                                    unsafe_allow_html=True
-                                )
-                            with row_cols[2]:
-                                st.button("−", key=f"minus_{selected}_{i}_{j}", use_container_width=True,
-                                          disabled=int(st.session_state[score_key]) <= 0,
-                                          on_click=adjust_mark_widget, args=(score_key, -1, maxmark))
-                            with row_cols[3]:
-                                val = st.number_input(
-                                    f"Marks for criterion {j+1}", min_value=0, max_value=maxmark, step=1,
-                                    key=score_key, label_visibility="collapsed"
-                                )
-                            with row_cols[4]:
-                                st.button("+", key=f"plus_{selected}_{i}_{j}", use_container_width=True,
-                                          disabled=int(st.session_state[score_key]) >= maxmark,
-                                          on_click=adjust_mark_widget, args=(score_key, 1, maxmark))
-                            ev["scores"][comp["name"]][criterion] = int(val)
-
-                        subtotal = sum(int(ev["scores"][comp["name"]].get(criterion, 0)) for criterion, _ in comp["criteria"])
-                        remaining = comp["max"] - subtotal
+                            st.markdown(
+                                f"**{j+1}. {html.escape(criterion)}**  "
+                                f"<span style='color:#7b8798'>· Maximum {maxmark} marks</span>",
+                                unsafe_allow_html=True
+                            )
+                        phase_key = f"phase_total_{selected}_{i}"
+                        saved_total = int(phase_total(ev, comp["name"]))
+                        if phase_key not in st.session_state:
+                            st.session_state[phase_key] = saved_total
+                        entered_phase_total = st.number_input(
+                            f"Current phase total (out of {comp['max']})",
+                            min_value=0, max_value=int(comp["max"]), step=1,
+                            key=phase_key
+                        )
+                        ev.setdefault("phase_totals", {})[comp["name"]] = int(entered_phase_total)
+                        subtotal = int(entered_phase_total)
+                        remaining = int(comp["max"]) - subtotal
                         sum_cols = st.columns([1, 1, 2])
-                        sum_cols[0].metric("Component score", f"{subtotal} / {comp['max']}")
+                        sum_cols[0].metric("Current phase total", f"{subtotal} / {comp['max']}")
                         sum_cols[1].metric("Marks remaining", remaining)
-                        sum_cols[2].progress(min(subtotal / comp["max"], 1.0) if comp["max"] else 0.0, text=f"{round(subtotal / comp['max'] * 100) if comp['max'] else 0}% completed")
+                        sum_cols[2].progress(min(subtotal / comp["max"], 1.0) if comp["max"] else 0.0, text=f"{round(subtotal / comp['max'] * 100) if comp['max'] else 0}% awarded")
                     else:
                         i = 7
 
@@ -1650,8 +1639,7 @@ elif page=="Project Group Details":
                         performance_pct = round((total_awarded / TOTAL_MARKS) * 100) if TOTAL_MARKS else 0
                         completed_components = sum(
                             1 for component in COMPONENTS
-                            if sum(float(ev.get("scores", {}).get(component["name"], {}).get(criterion, 0) or 0)
-                                   for criterion, _ in component["criteria"]) > 0
+                            if phase_total(ev, component["name"]) > 0
                         )
                         completion_pct = round(completed_components / len(COMPONENTS) * 100) if COMPONENTS else 0
                         status_label = "Ready for Review" if completed_components == len(COMPONENTS) else "In Progress"
@@ -1778,7 +1766,7 @@ elif page=="Project Group Details":
 
 else:
     st.subheader("Records & Export")
-    st.write("Review every student's saved marks and download a class marksheet in Excel or PDF format.")
+    st.write("Review each student's saved phase totals and download a class marksheet in Excel or PDF format.")
     st.info("The evaluation is out of 100. The internal marksheet score is calculated as half of the evaluation total, out of 50.")
     summary=[]
     details=[]
@@ -1788,9 +1776,8 @@ else:
         half_total = total / 2
         rec={"Group":r["group_no"],"Roll No.":roll,"Student Name":r["student_name"],"ML Project Title":r["ml_project_title"],"Marks (Out of 100)":round(total,2),"Marks (Out of 50)":round(half_total,2),"Recommendation":ev.get("recommendation",""),"Last Updated":ev.get("last_updated","")}
         for comp in COMPONENTS:
-            rec[comp["name"]]=sum(ev["scores"][comp["name"]].values())
-            for criterion,maxmark in comp["criteria"]:
-                details.append({"Group":r["group_no"],"Roll No.":roll,"Student Name":r["student_name"],"ML Project Title":r["ml_project_title"],"Component":comp["name"],"Criterion":criterion,"Awarded Marks":ev["scores"][comp["name"]].get(criterion,0),"Maximum Marks":maxmark,"Faculty Remarks":ev["remarks"].get(comp["name"],"")})
+            rec[comp["name"]]=phase_total(ev, comp["name"])
+            details.append({"Group":r["group_no"],"Roll No.":roll,"Student Name":r["student_name"],"ML Project Title":r["ml_project_title"],"Component":comp["name"],"Phase Total":phase_total(ev, comp["name"]),"Maximum Marks":comp["max"],"Faculty Remarks":ev["remarks"].get(comp["name"],"")})
         summary.append(rec)
     summary_df=pd.DataFrame(summary)
     details_df=pd.DataFrame(details)
@@ -1894,4 +1881,4 @@ else:
     st.warning("Streamlit Community Cloud's local filesystem may reset after redeployment or restart. For permanent production records, use hosted PostgreSQL/Supabase or download the database and marksheet backups regularly.")
 
 st.divider()
-st.caption("Mark scheme: Phase 1 15 · Phase 2 15 · Phase 3 25 · Phase 4 15 · Report 10 · Presentation 10 · Viva 10 = 100.")
+st.caption("Mark scheme: Phase 1 15 · Phase 2 15 · Phase 3 25 · Phase 4 15 · Report 10 · Presentation 10 · Viva 10 = 100. Faculty enter one total per phase; criteria are read-only guidance.")

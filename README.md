@@ -87,3 +87,7 @@ The Records & Export page displays each student's marks out of 100 and the half-
 
 
 **Excel export dependency:** Install dependencies using `python -m pip install -r requirements.txt`. If Excel export reports that `openpyxl` is missing, run `python -m pip install openpyxl` using the same Python interpreter that launches Streamlit. The app now handles a missing package without crashing; PDF and CSV exports remain available.
+
+
+## Phase-total evaluation workflow
+Faculty enter one editable total per student for each evaluation phase. Individual criteria and their maximum marks remain visible as read-only assessment guidance; criterion-level increment/decrement controls have been removed. Existing criterion marks are migrated to their summed phase total when the evaluation is first loaded, and future marks are saved as phase totals. Class marksheets use the phase totals and calculate the internal score as half of the total out of 100.

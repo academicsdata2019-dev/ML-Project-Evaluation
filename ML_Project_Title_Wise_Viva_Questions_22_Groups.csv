@@ -1,0 +1,771 @@
+﻿Group,Project Title,Phase,Question No.,Viva Question
+1,Travelvista (booking management system),Phase 1 — Problem Definition & EDA,1,"What real-world problem does “Travelvista (booking management system)” solve, and who would use the solution?"
+1,Travelvista (booking management system),Phase 1 — Problem Definition & EDA,2,"What is the exact prediction or analysis objective for Travelvista (booking management system), and how will you define success?"
+1,Travelvista (booking management system),Phase 1 — Problem Definition & EDA,3,"Which data source represents travel and booking data, and what checks did you perform for reliability and permission to use it?"
+1,Travelvista (booking management system),Phase 1 — Problem Definition & EDA,4,"Which of these inputs are most relevant: destination, route, travel date, season, booking lead time and price? Explain why you selected them."
+1,Travelvista (booking management system),Phase 1 — Problem Definition & EDA,5,"What did your initial EDA reveal about missing values, outliers, class/target distribution, or important trends?"
+1,Travelvista (booking management system),Phase 2 — Methodology & Evaluation Metrics,1,"Why is the chosen ML task for “Travelvista (booking management system)” classification, regression, forecasting, ranking, or another task?"
+1,Travelvista (booking management system),Phase 2 — Methodology & Evaluation Metrics,2,"How did you split the travel and booking data dataset, and how did you prevent data leakage?"
+1,Travelvista (booking management system),Phase 2 — Methodology & Evaluation Metrics,3,"Which evaluation metrics best measure performance for booking conversion, trip preferences, flight fares or travel planning outcomes, and why are they appropriate?"
+1,Travelvista (booking management system),Phase 2 — Methodology & Evaluation Metrics,4,"What baseline did you establish before trying more complex models, and how does your proposed method compare?"
+1,Travelvista (booking management system),Phase 2 — Methodology & Evaluation Metrics,5,"How did you handle missing values, categorical fields, scaling, class imbalance, or date-related features in your pipeline?"
+1,Travelvista (booking management system),Phase 3 — Supervised Learning / Implementation,1,"Which supervised algorithm did you choose for “Travelvista (booking management system)”, and why is it suitable for booking conversion, trip preferences, flight fares or travel planning outcomes?"
+1,Travelvista (booking management system),Phase 3 — Supervised Learning / Implementation,2,"Explain how your model uses destination, route, travel date, season, booking lead time and price to produce its output."
+1,Travelvista (booking management system),Phase 3 — Supervised Learning / Implementation,3,"Which features had the strongest influence on the prediction, and how did you verify that influence?"
+1,Travelvista (booking management system),Phase 3 — Supervised Learning / Implementation,4,"What were the training and test results for your main metrics, and what do those values mean for this project?"
+1,Travelvista (booking management system),Phase 3 — Supervised Learning / Implementation,5,"What did you do to detect overfitting and improve generalisation, such as cross-validation, regularisation or tuning?"
+1,Travelvista (booking management system),Phase 4 — Unsupervised Learning,1,"What useful customer, property, booking, player, student, or operational segments could clustering reveal in “Travelvista (booking management system)”?"
+1,Travelvista (booking management system),Phase 4 — Unsupervised Learning,2,"Which unsupervised method (such as K-Means, hierarchical clustering or PCA) did you use or propose, and why?"
+1,Travelvista (booking management system),Phase 4 — Unsupervised Learning,3,How did you scale features and choose the number of clusters or components for this dataset?
+1,Travelvista (booking management system),Phase 4 — Unsupervised Learning,4,"How would you interpret and label the clusters in terms of availability, seasonality, demand peaks and changing travel conditions?"
+1,Travelvista (booking management system),Phase 4 — Unsupervised Learning,5,"If unsupervised learning is not implemented in your current version, how could it add value without replacing the main prediction task?"
+1,Travelvista (booking management system),Phase 5 — Final Project Report,1,"How does your report connect the problem statement, dataset, methodology and results for “Travelvista (booking management system)”?"
+1,Travelvista (booking management system),Phase 5 — Final Project Report,2,"Which table, chart or EDA visual best supports your main conclusion about travel and booking data, and why?"
+1,Travelvista (booking management system),Phase 5 — Final Project Report,3,"How did you document preprocessing, feature definitions, model settings and the experiment environment so another person can reproduce it?"
+1,Travelvista (booking management system),Phase 5 — Final Project Report,4,"What are the key limitations or possible biases in the dataset and model for booking conversion, trip preferences, flight fares or travel planning outcomes?"
+1,Travelvista (booking management system),Phase 5 — Final Project Report,5,What specific future improvement would most increase the reliability or practical usefulness of this project?
+1,Travelvista (booking management system),Phase 6 — Presentation,1,"Summarise “Travelvista (booking management system)” in one minute: problem, data, method and main result."
+1,Travelvista (booking management system),Phase 6 — Presentation,2,Which visual would you use to explain the most important finding about travel and booking data to a non-technical audience?
+1,Travelvista (booking management system),Phase 6 — Presentation,3,"How would you explain the model's output for booking conversion, trip preferences, flight fares or travel planning outcomes without overstating its certainty?"
+1,Travelvista (booking management system),Phase 6 — Presentation,4,"What is the strongest evidence that your solution works, and what result or limitation should the audience know?"
+1,Travelvista (booking management system),Phase 6 — Presentation,5,"If you had one additional week, which improvement would you demonstrate first and how would you measure its effect?"
+1,Travelvista (booking management system),Phase 7 — Viva & Demonstration,1,Demonstrate one complete example in “Travelvista (booking management system)” from entering or selecting inputs to interpreting the model output.
+1,Travelvista (booking management system),Phase 7 — Viva & Demonstration,2,Walk through the data-processing steps that convert raw travel and booking data records into model-ready features.
+1,Travelvista (booking management system),Phase 7 — Viva & Demonstration,3,Show how the application behaves when a required field is missing or an input is outside the range seen during training.
+1,Travelvista (booking management system),Phase 7 — Viva & Demonstration,4,Explain one incorrect prediction or failure case and how you would investigate and reduce similar errors.
+1,Travelvista (booking management system),Phase 7 — Viva & Demonstration,5,"What privacy, fairness, safety or operational concern is most important for this project, and what practical safeguard would you apply?"
+2,PriceMyPhone,Phase 1 — Problem Definition & EDA,1,"What real-world problem does “PriceMyPhone” solve, and who would use the solution?"
+2,PriceMyPhone,Phase 1 — Problem Definition & EDA,2,"What is the exact prediction or analysis objective for PriceMyPhone, and how will you define success?"
+2,PriceMyPhone,Phase 1 — Problem Definition & EDA,3,"Which data source represents mobile phone market data, and what checks did you perform for reliability and permission to use it?"
+2,PriceMyPhone,Phase 1 — Problem Definition & EDA,4,"Which of these inputs are most relevant: brand, model, RAM, storage, processor, condition and release year? Explain why you selected them."
+2,PriceMyPhone,Phase 1 — Problem Definition & EDA,5,"What did your initial EDA reveal about missing values, outliers, class/target distribution, or important trends?"
+2,PriceMyPhone,Phase 2 — Methodology & Evaluation Metrics,1,"Why is the chosen ML task for “PriceMyPhone” classification, regression, forecasting, ranking, or another task?"
+2,PriceMyPhone,Phase 2 — Methodology & Evaluation Metrics,2,"How did you split the mobile phone market data dataset, and how did you prevent data leakage?"
+2,PriceMyPhone,Phase 2 — Methodology & Evaluation Metrics,3,"Which evaluation metrics best measure performance for phone price or price range, and why are they appropriate?"
+2,PriceMyPhone,Phase 2 — Methodology & Evaluation Metrics,4,"What baseline did you establish before trying more complex models, and how does your proposed method compare?"
+2,PriceMyPhone,Phase 2 — Methodology & Evaluation Metrics,5,"How did you handle missing values, categorical fields, scaling, class imbalance, or date-related features in your pipeline?"
+2,PriceMyPhone,Phase 3 — Supervised Learning / Implementation,1,"Which supervised algorithm did you choose for “PriceMyPhone”, and why is it suitable for phone price or price range?"
+2,PriceMyPhone,Phase 3 — Supervised Learning / Implementation,2,"Explain how your model uses brand, model, RAM, storage, processor, condition and release year to produce its output."
+2,PriceMyPhone,Phase 3 — Supervised Learning / Implementation,3,"Which features had the strongest influence on the prediction, and how did you verify that influence?"
+2,PriceMyPhone,Phase 3 — Supervised Learning / Implementation,4,"What were the training and test results for your main metrics, and what do those values mean for this project?"
+2,PriceMyPhone,Phase 3 — Supervised Learning / Implementation,5,"What did you do to detect overfitting and improve generalisation, such as cross-validation, regularisation or tuning?"
+2,PriceMyPhone,Phase 4 — Unsupervised Learning,1,"What useful customer, property, booking, player, student, or operational segments could clustering reveal in “PriceMyPhone”?"
+2,PriceMyPhone,Phase 4 — Unsupervised Learning,2,"Which unsupervised method (such as K-Means, hierarchical clustering or PCA) did you use or propose, and why?"
+2,PriceMyPhone,Phase 4 — Unsupervised Learning,3,How did you scale features and choose the number of clusters or components for this dataset?
+2,PriceMyPhone,Phase 4 — Unsupervised Learning,4,"How would you interpret and label the clusters in terms of new model launches, depreciation and changing market prices?"
+2,PriceMyPhone,Phase 4 — Unsupervised Learning,5,"If unsupervised learning is not implemented in your current version, how could it add value without replacing the main prediction task?"
+2,PriceMyPhone,Phase 5 — Final Project Report,1,"How does your report connect the problem statement, dataset, methodology and results for “PriceMyPhone”?"
+2,PriceMyPhone,Phase 5 — Final Project Report,2,"Which table, chart or EDA visual best supports your main conclusion about mobile phone market data, and why?"
+2,PriceMyPhone,Phase 5 — Final Project Report,3,"How did you document preprocessing, feature definitions, model settings and the experiment environment so another person can reproduce it?"
+2,PriceMyPhone,Phase 5 — Final Project Report,4,What are the key limitations or possible biases in the dataset and model for phone price or price range?
+2,PriceMyPhone,Phase 5 — Final Project Report,5,What specific future improvement would most increase the reliability or practical usefulness of this project?
+2,PriceMyPhone,Phase 6 — Presentation,1,"Summarise “PriceMyPhone” in one minute: problem, data, method and main result."
+2,PriceMyPhone,Phase 6 — Presentation,2,Which visual would you use to explain the most important finding about mobile phone market data to a non-technical audience?
+2,PriceMyPhone,Phase 6 — Presentation,3,How would you explain the model's output for phone price or price range without overstating its certainty?
+2,PriceMyPhone,Phase 6 — Presentation,4,"What is the strongest evidence that your solution works, and what result or limitation should the audience know?"
+2,PriceMyPhone,Phase 6 — Presentation,5,"If you had one additional week, which improvement would you demonstrate first and how would you measure its effect?"
+2,PriceMyPhone,Phase 7 — Viva & Demonstration,1,Demonstrate one complete example in “PriceMyPhone” from entering or selecting inputs to interpreting the model output.
+2,PriceMyPhone,Phase 7 — Viva & Demonstration,2,Walk through the data-processing steps that convert raw mobile phone market data records into model-ready features.
+2,PriceMyPhone,Phase 7 — Viva & Demonstration,3,Show how the application behaves when a required field is missing or an input is outside the range seen during training.
+2,PriceMyPhone,Phase 7 — Viva & Demonstration,4,Explain one incorrect prediction or failure case and how you would investigate and reduce similar errors.
+2,PriceMyPhone,Phase 7 — Viva & Demonstration,5,"What privacy, fairness, safety or operational concern is most important for this project, and what practical safeguard would you apply?"
+3,Resume Screening System,Phase 1 — Problem Definition & EDA,1,"What real-world problem does “Resume Screening System” solve, and who would use the solution?"
+3,Resume Screening System,Phase 1 — Problem Definition & EDA,2,"What is the exact prediction or analysis objective for Resume Screening System, and how will you define success?"
+3,Resume Screening System,Phase 1 — Problem Definition & EDA,3,"Which data source represents resume and recruitment data, and what checks did you perform for reliability and permission to use it?"
+3,Resume Screening System,Phase 1 — Problem Definition & EDA,4,"Which of these inputs are most relevant: skills, education, experience, certifications and job requirements? Explain why you selected them."
+3,Resume Screening System,Phase 1 — Problem Definition & EDA,5,"What did your initial EDA reveal about missing values, outliers, class/target distribution, or important trends?"
+3,Resume Screening System,Phase 2 — Methodology & Evaluation Metrics,1,"Why is the chosen ML task for “Resume Screening System” classification, regression, forecasting, ranking, or another task?"
+3,Resume Screening System,Phase 2 — Methodology & Evaluation Metrics,2,"How did you split the resume and recruitment data dataset, and how did you prevent data leakage?"
+3,Resume Screening System,Phase 2 — Methodology & Evaluation Metrics,3,"Which evaluation metrics best measure performance for candidate-job fit, screening category or job-seeker outcome, and why are they appropriate?"
+3,Resume Screening System,Phase 2 — Methodology & Evaluation Metrics,4,"What baseline did you establish before trying more complex models, and how does your proposed method compare?"
+3,Resume Screening System,Phase 2 — Methodology & Evaluation Metrics,5,"How did you handle missing values, categorical fields, scaling, class imbalance, or date-related features in your pipeline?"
+3,Resume Screening System,Phase 3 — Supervised Learning / Implementation,1,"Which supervised algorithm did you choose for “Resume Screening System”, and why is it suitable for candidate-job fit, screening category or job-seeker outcome?"
+3,Resume Screening System,Phase 3 — Supervised Learning / Implementation,2,"Explain how your model uses skills, education, experience, certifications and job requirements to produce its output."
+3,Resume Screening System,Phase 3 — Supervised Learning / Implementation,3,"Which features had the strongest influence on the prediction, and how did you verify that influence?"
+3,Resume Screening System,Phase 3 — Supervised Learning / Implementation,4,"What were the training and test results for your main metrics, and what do those values mean for this project?"
+3,Resume Screening System,Phase 3 — Supervised Learning / Implementation,5,"What did you do to detect overfitting and improve generalisation, such as cross-validation, regularisation or tuning?"
+3,Resume Screening System,Phase 4 — Unsupervised Learning,1,"What useful customer, property, booking, player, student, or operational segments could clustering reveal in “Resume Screening System”?"
+3,Resume Screening System,Phase 4 — Unsupervised Learning,2,"Which unsupervised method (such as K-Means, hierarchical clustering or PCA) did you use or propose, and why?"
+3,Resume Screening System,Phase 4 — Unsupervised Learning,3,How did you scale features and choose the number of clusters or components for this dataset?
+3,Resume Screening System,Phase 4 — Unsupervised Learning,4,"How would you interpret and label the clusters in terms of fairness, changing job requirements and skill clusters?"
+3,Resume Screening System,Phase 4 — Unsupervised Learning,5,"If unsupervised learning is not implemented in your current version, how could it add value without replacing the main prediction task?"
+3,Resume Screening System,Phase 5 — Final Project Report,1,"How does your report connect the problem statement, dataset, methodology and results for “Resume Screening System”?"
+3,Resume Screening System,Phase 5 — Final Project Report,2,"Which table, chart or EDA visual best supports your main conclusion about resume and recruitment data, and why?"
+3,Resume Screening System,Phase 5 — Final Project Report,3,"How did you document preprocessing, feature definitions, model settings and the experiment environment so another person can reproduce it?"
+3,Resume Screening System,Phase 5 — Final Project Report,4,"What are the key limitations or possible biases in the dataset and model for candidate-job fit, screening category or job-seeker outcome?"
+3,Resume Screening System,Phase 5 — Final Project Report,5,What specific future improvement would most increase the reliability or practical usefulness of this project?
+3,Resume Screening System,Phase 6 — Presentation,1,"Summarise “Resume Screening System” in one minute: problem, data, method and main result."
+3,Resume Screening System,Phase 6 — Presentation,2,Which visual would you use to explain the most important finding about resume and recruitment data to a non-technical audience?
+3,Resume Screening System,Phase 6 — Presentation,3,"How would you explain the model's output for candidate-job fit, screening category or job-seeker outcome without overstating its certainty?"
+3,Resume Screening System,Phase 6 — Presentation,4,"What is the strongest evidence that your solution works, and what result or limitation should the audience know?"
+3,Resume Screening System,Phase 6 — Presentation,5,"If you had one additional week, which improvement would you demonstrate first and how would you measure its effect?"
+3,Resume Screening System,Phase 7 — Viva & Demonstration,1,Demonstrate one complete example in “Resume Screening System” from entering or selecting inputs to interpreting the model output.
+3,Resume Screening System,Phase 7 — Viva & Demonstration,2,Walk through the data-processing steps that convert raw resume and recruitment data records into model-ready features.
+3,Resume Screening System,Phase 7 — Viva & Demonstration,3,Show how the application behaves when a required field is missing or an input is outside the range seen during training.
+3,Resume Screening System,Phase 7 — Viva & Demonstration,4,Explain one incorrect prediction or failure case and how you would investigate and reduce similar errors.
+3,Resume Screening System,Phase 7 — Viva & Demonstration,5,"What privacy, fairness, safety or operational concern is most important for this project, and what practical safeguard would you apply?"
+4,Smart demand products prediction,Phase 1 — Problem Definition & EDA,1,"What real-world problem does “Smart demand products prediction” solve, and who would use the solution?"
+4,Smart demand products prediction,Phase 1 — Problem Definition & EDA,2,"What is the exact prediction or analysis objective for Smart demand products prediction, and how will you define success?"
+4,Smart demand products prediction,Phase 1 — Problem Definition & EDA,3,"Which data source represents product demand and sales data, and what checks did you perform for reliability and permission to use it?"
+4,Smart demand products prediction,Phase 1 — Problem Definition & EDA,4,"Which of these inputs are most relevant: product category, price, promotions, season, location and historical sales? Explain why you selected them."
+4,Smart demand products prediction,Phase 1 — Problem Definition & EDA,5,"What did your initial EDA reveal about missing values, outliers, class/target distribution, or important trends?"
+4,Smart demand products prediction,Phase 2 — Methodology & Evaluation Metrics,1,"Why is the chosen ML task for “Smart demand products prediction” classification, regression, forecasting, ranking, or another task?"
+4,Smart demand products prediction,Phase 2 — Methodology & Evaluation Metrics,2,"How did you split the product demand and sales data dataset, and how did you prevent data leakage?"
+4,Smart demand products prediction,Phase 2 — Methodology & Evaluation Metrics,3,"Which evaluation metrics best measure performance for future demand, sales volume or demand category, and why are they appropriate?"
+4,Smart demand products prediction,Phase 2 — Methodology & Evaluation Metrics,4,"What baseline did you establish before trying more complex models, and how does your proposed method compare?"
+4,Smart demand products prediction,Phase 2 — Methodology & Evaluation Metrics,5,"How did you handle missing values, categorical fields, scaling, class imbalance, or date-related features in your pipeline?"
+4,Smart demand products prediction,Phase 3 — Supervised Learning / Implementation,1,"Which supervised algorithm did you choose for “Smart demand products prediction”, and why is it suitable for future demand, sales volume or demand category?"
+4,Smart demand products prediction,Phase 3 — Supervised Learning / Implementation,2,"Explain how your model uses product category, price, promotions, season, location and historical sales to produce its output."
+4,Smart demand products prediction,Phase 3 — Supervised Learning / Implementation,3,"Which features had the strongest influence on the prediction, and how did you verify that influence?"
+4,Smart demand products prediction,Phase 3 — Supervised Learning / Implementation,4,"What were the training and test results for your main metrics, and what do those values mean for this project?"
+4,Smart demand products prediction,Phase 3 — Supervised Learning / Implementation,5,"What did you do to detect overfitting and improve generalisation, such as cross-validation, regularisation or tuning?"
+4,Smart demand products prediction,Phase 4 — Unsupervised Learning,1,"What useful customer, property, booking, player, student, or operational segments could clustering reveal in “Smart demand products prediction”?"
+4,Smart demand products prediction,Phase 4 — Unsupervised Learning,2,"Which unsupervised method (such as K-Means, hierarchical clustering or PCA) did you use or propose, and why?"
+4,Smart demand products prediction,Phase 4 — Unsupervised Learning,3,How did you scale features and choose the number of clusters or components for this dataset?
+4,Smart demand products prediction,Phase 4 — Unsupervised Learning,4,"How would you interpret and label the clusters in terms of seasonality, promotion effects and shifting customer demand?"
+4,Smart demand products prediction,Phase 4 — Unsupervised Learning,5,"If unsupervised learning is not implemented in your current version, how could it add value without replacing the main prediction task?"
+4,Smart demand products prediction,Phase 5 — Final Project Report,1,"How does your report connect the problem statement, dataset, methodology and results for “Smart demand products prediction”?"
+4,Smart demand products prediction,Phase 5 — Final Project Report,2,"Which table, chart or EDA visual best supports your main conclusion about product demand and sales data, and why?"
+4,Smart demand products prediction,Phase 5 — Final Project Report,3,"How did you document preprocessing, feature definitions, model settings and the experiment environment so another person can reproduce it?"
+4,Smart demand products prediction,Phase 5 — Final Project Report,4,"What are the key limitations or possible biases in the dataset and model for future demand, sales volume or demand category?"
+4,Smart demand products prediction,Phase 5 — Final Project Report,5,What specific future improvement would most increase the reliability or practical usefulness of this project?
+4,Smart demand products prediction,Phase 6 — Presentation,1,"Summarise “Smart demand products prediction” in one minute: problem, data, method and main result."
+4,Smart demand products prediction,Phase 6 — Presentation,2,Which visual would you use to explain the most important finding about product demand and sales data to a non-technical audience?
+4,Smart demand products prediction,Phase 6 — Presentation,3,"How would you explain the model's output for future demand, sales volume or demand category without overstating its certainty?"
+4,Smart demand products prediction,Phase 6 — Presentation,4,"What is the strongest evidence that your solution works, and what result or limitation should the audience know?"
+4,Smart demand products prediction,Phase 6 — Presentation,5,"If you had one additional week, which improvement would you demonstrate first and how would you measure its effect?"
+4,Smart demand products prediction,Phase 7 — Viva & Demonstration,1,Demonstrate one complete example in “Smart demand products prediction” from entering or selecting inputs to interpreting the model output.
+4,Smart demand products prediction,Phase 7 — Viva & Demonstration,2,Walk through the data-processing steps that convert raw product demand and sales data records into model-ready features.
+4,Smart demand products prediction,Phase 7 — Viva & Demonstration,3,Show how the application behaves when a required field is missing or an input is outside the range seen during training.
+4,Smart demand products prediction,Phase 7 — Viva & Demonstration,4,Explain one incorrect prediction or failure case and how you would investigate and reduce similar errors.
+4,Smart demand products prediction,Phase 7 — Viva & Demonstration,5,"What privacy, fairness, safety or operational concern is most important for this project, and what practical safeguard would you apply?"
+5,Job seekers prediction,Phase 1 — Problem Definition & EDA,1,"What real-world problem does “Job seekers prediction” solve, and who would use the solution?"
+5,Job seekers prediction,Phase 1 — Problem Definition & EDA,2,"What is the exact prediction or analysis objective for Job seekers prediction, and how will you define success?"
+5,Job seekers prediction,Phase 1 — Problem Definition & EDA,3,"Which data source represents resume and recruitment data, and what checks did you perform for reliability and permission to use it?"
+5,Job seekers prediction,Phase 1 — Problem Definition & EDA,4,"Which of these inputs are most relevant: skills, education, experience, certifications and job requirements? Explain why you selected them."
+5,Job seekers prediction,Phase 1 — Problem Definition & EDA,5,"What did your initial EDA reveal about missing values, outliers, class/target distribution, or important trends?"
+5,Job seekers prediction,Phase 2 — Methodology & Evaluation Metrics,1,"Why is the chosen ML task for “Job seekers prediction” classification, regression, forecasting, ranking, or another task?"
+5,Job seekers prediction,Phase 2 — Methodology & Evaluation Metrics,2,"How did you split the resume and recruitment data dataset, and how did you prevent data leakage?"
+5,Job seekers prediction,Phase 2 — Methodology & Evaluation Metrics,3,"Which evaluation metrics best measure performance for candidate-job fit, screening category or job-seeker outcome, and why are they appropriate?"
+5,Job seekers prediction,Phase 2 — Methodology & Evaluation Metrics,4,"What baseline did you establish before trying more complex models, and how does your proposed method compare?"
+5,Job seekers prediction,Phase 2 — Methodology & Evaluation Metrics,5,"How did you handle missing values, categorical fields, scaling, class imbalance, or date-related features in your pipeline?"
+5,Job seekers prediction,Phase 3 — Supervised Learning / Implementation,1,"Which supervised algorithm did you choose for “Job seekers prediction”, and why is it suitable for candidate-job fit, screening category or job-seeker outcome?"
+5,Job seekers prediction,Phase 3 — Supervised Learning / Implementation,2,"Explain how your model uses skills, education, experience, certifications and job requirements to produce its output."
+5,Job seekers prediction,Phase 3 — Supervised Learning / Implementation,3,"Which features had the strongest influence on the prediction, and how did you verify that influence?"
+5,Job seekers prediction,Phase 3 — Supervised Learning / Implementation,4,"What were the training and test results for your main metrics, and what do those values mean for this project?"
+5,Job seekers prediction,Phase 3 — Supervised Learning / Implementation,5,"What did you do to detect overfitting and improve generalisation, such as cross-validation, regularisation or tuning?"
+5,Job seekers prediction,Phase 4 — Unsupervised Learning,1,"What useful customer, property, booking, player, student, or operational segments could clustering reveal in “Job seekers prediction”?"
+5,Job seekers prediction,Phase 4 — Unsupervised Learning,2,"Which unsupervised method (such as K-Means, hierarchical clustering or PCA) did you use or propose, and why?"
+5,Job seekers prediction,Phase 4 — Unsupervised Learning,3,How did you scale features and choose the number of clusters or components for this dataset?
+5,Job seekers prediction,Phase 4 — Unsupervised Learning,4,"How would you interpret and label the clusters in terms of fairness, changing job requirements and skill clusters?"
+5,Job seekers prediction,Phase 4 — Unsupervised Learning,5,"If unsupervised learning is not implemented in your current version, how could it add value without replacing the main prediction task?"
+5,Job seekers prediction,Phase 5 — Final Project Report,1,"How does your report connect the problem statement, dataset, methodology and results for “Job seekers prediction”?"
+5,Job seekers prediction,Phase 5 — Final Project Report,2,"Which table, chart or EDA visual best supports your main conclusion about resume and recruitment data, and why?"
+5,Job seekers prediction,Phase 5 — Final Project Report,3,"How did you document preprocessing, feature definitions, model settings and the experiment environment so another person can reproduce it?"
+5,Job seekers prediction,Phase 5 — Final Project Report,4,"What are the key limitations or possible biases in the dataset and model for candidate-job fit, screening category or job-seeker outcome?"
+5,Job seekers prediction,Phase 5 — Final Project Report,5,What specific future improvement would most increase the reliability or practical usefulness of this project?
+5,Job seekers prediction,Phase 6 — Presentation,1,"Summarise “Job seekers prediction” in one minute: problem, data, method and main result."
+5,Job seekers prediction,Phase 6 — Presentation,2,Which visual would you use to explain the most important finding about resume and recruitment data to a non-technical audience?
+5,Job seekers prediction,Phase 6 — Presentation,3,"How would you explain the model's output for candidate-job fit, screening category or job-seeker outcome without overstating its certainty?"
+5,Job seekers prediction,Phase 6 — Presentation,4,"What is the strongest evidence that your solution works, and what result or limitation should the audience know?"
+5,Job seekers prediction,Phase 6 — Presentation,5,"If you had one additional week, which improvement would you demonstrate first and how would you measure its effect?"
+5,Job seekers prediction,Phase 7 — Viva & Demonstration,1,Demonstrate one complete example in “Job seekers prediction” from entering or selecting inputs to interpreting the model output.
+5,Job seekers prediction,Phase 7 — Viva & Demonstration,2,Walk through the data-processing steps that convert raw resume and recruitment data records into model-ready features.
+5,Job seekers prediction,Phase 7 — Viva & Demonstration,3,Show how the application behaves when a required field is missing or an input is outside the range seen during training.
+5,Job seekers prediction,Phase 7 — Viva & Demonstration,4,Explain one incorrect prediction or failure case and how you would investigate and reduce similar errors.
+5,Job seekers prediction,Phase 7 — Viva & Demonstration,5,"What privacy, fairness, safety or operational concern is most important for this project, and what practical safeguard would you apply?"
+6,Food delivery time prediction,Phase 1 — Problem Definition & EDA,1,"What real-world problem does “Food delivery time prediction” solve, and who would use the solution?"
+6,Food delivery time prediction,Phase 1 — Problem Definition & EDA,2,"What is the exact prediction or analysis objective for Food delivery time prediction, and how will you define success?"
+6,Food delivery time prediction,Phase 1 — Problem Definition & EDA,3,"Which data source represents food delivery operations data, and what checks did you perform for reliability and permission to use it?"
+6,Food delivery time prediction,Phase 1 — Problem Definition & EDA,4,"Which of these inputs are most relevant: restaurant preparation time, distance, traffic, weather, order size and time of day? Explain why you selected them."
+6,Food delivery time prediction,Phase 1 — Problem Definition & EDA,5,"What did your initial EDA reveal about missing values, outliers, class/target distribution, or important trends?"
+6,Food delivery time prediction,Phase 2 — Methodology & Evaluation Metrics,1,"Why is the chosen ML task for “Food delivery time prediction” classification, regression, forecasting, ranking, or another task?"
+6,Food delivery time prediction,Phase 2 — Methodology & Evaluation Metrics,2,"How did you split the food delivery operations data dataset, and how did you prevent data leakage?"
+6,Food delivery time prediction,Phase 2 — Methodology & Evaluation Metrics,3,"Which evaluation metrics best measure performance for delivery duration or delivery-time category, and why are they appropriate?"
+6,Food delivery time prediction,Phase 2 — Methodology & Evaluation Metrics,4,"What baseline did you establish before trying more complex models, and how does your proposed method compare?"
+6,Food delivery time prediction,Phase 2 — Methodology & Evaluation Metrics,5,"How did you handle missing values, categorical fields, scaling, class imbalance, or date-related features in your pipeline?"
+6,Food delivery time prediction,Phase 3 — Supervised Learning / Implementation,1,"Which supervised algorithm did you choose for “Food delivery time prediction”, and why is it suitable for delivery duration or delivery-time category?"
+6,Food delivery time prediction,Phase 3 — Supervised Learning / Implementation,2,"Explain how your model uses restaurant preparation time, distance, traffic, weather, order size and time of day to produce its output."
+6,Food delivery time prediction,Phase 3 — Supervised Learning / Implementation,3,"Which features had the strongest influence on the prediction, and how did you verify that influence?"
+6,Food delivery time prediction,Phase 3 — Supervised Learning / Implementation,4,"What were the training and test results for your main metrics, and what do those values mean for this project?"
+6,Food delivery time prediction,Phase 3 — Supervised Learning / Implementation,5,"What did you do to detect overfitting and improve generalisation, such as cross-validation, regularisation or tuning?"
+6,Food delivery time prediction,Phase 4 — Unsupervised Learning,1,"What useful customer, property, booking, player, student, or operational segments could clustering reveal in “Food delivery time prediction”?"
+6,Food delivery time prediction,Phase 4 — Unsupervised Learning,2,"Which unsupervised method (such as K-Means, hierarchical clustering or PCA) did you use or propose, and why?"
+6,Food delivery time prediction,Phase 4 — Unsupervised Learning,3,How did you scale features and choose the number of clusters or components for this dataset?
+6,Food delivery time prediction,Phase 4 — Unsupervised Learning,4,"How would you interpret and label the clusters in terms of traffic peaks, long-distance orders and changing operating conditions?"
+6,Food delivery time prediction,Phase 4 — Unsupervised Learning,5,"If unsupervised learning is not implemented in your current version, how could it add value without replacing the main prediction task?"
+6,Food delivery time prediction,Phase 5 — Final Project Report,1,"How does your report connect the problem statement, dataset, methodology and results for “Food delivery time prediction”?"
+6,Food delivery time prediction,Phase 5 — Final Project Report,2,"Which table, chart or EDA visual best supports your main conclusion about food delivery operations data, and why?"
+6,Food delivery time prediction,Phase 5 — Final Project Report,3,"How did you document preprocessing, feature definitions, model settings and the experiment environment so another person can reproduce it?"
+6,Food delivery time prediction,Phase 5 — Final Project Report,4,What are the key limitations or possible biases in the dataset and model for delivery duration or delivery-time category?
+6,Food delivery time prediction,Phase 5 — Final Project Report,5,What specific future improvement would most increase the reliability or practical usefulness of this project?
+6,Food delivery time prediction,Phase 6 — Presentation,1,"Summarise “Food delivery time prediction” in one minute: problem, data, method and main result."
+6,Food delivery time prediction,Phase 6 — Presentation,2,Which visual would you use to explain the most important finding about food delivery operations data to a non-technical audience?
+6,Food delivery time prediction,Phase 6 — Presentation,3,How would you explain the model's output for delivery duration or delivery-time category without overstating its certainty?
+6,Food delivery time prediction,Phase 6 — Presentation,4,"What is the strongest evidence that your solution works, and what result or limitation should the audience know?"
+6,Food delivery time prediction,Phase 6 — Presentation,5,"If you had one additional week, which improvement would you demonstrate first and how would you measure its effect?"
+6,Food delivery time prediction,Phase 7 — Viva & Demonstration,1,Demonstrate one complete example in “Food delivery time prediction” from entering or selecting inputs to interpreting the model output.
+6,Food delivery time prediction,Phase 7 — Viva & Demonstration,2,Walk through the data-processing steps that convert raw food delivery operations data records into model-ready features.
+6,Food delivery time prediction,Phase 7 — Viva & Demonstration,3,Show how the application behaves when a required field is missing or an input is outside the range seen during training.
+6,Food delivery time prediction,Phase 7 — Viva & Demonstration,4,Explain one incorrect prediction or failure case and how you would investigate and reduce similar errors.
+6,Food delivery time prediction,Phase 7 — Viva & Demonstration,5,"What privacy, fairness, safety or operational concern is most important for this project, and what practical safeguard would you apply?"
+7,Hotel Booking Cancellation,Phase 1 — Problem Definition & EDA,1,"What real-world problem does “Hotel Booking Cancellation” solve, and who would use the solution?"
+7,Hotel Booking Cancellation,Phase 1 — Problem Definition & EDA,2,"What is the exact prediction or analysis objective for Hotel Booking Cancellation, and how will you define success?"
+7,Hotel Booking Cancellation,Phase 1 — Problem Definition & EDA,3,"Which data source represents hotel booking data, and what checks did you perform for reliability and permission to use it?"
+7,Hotel Booking Cancellation,Phase 1 — Problem Definition & EDA,4,"Which of these inputs are most relevant: lead time, room type, deposit, booking channel, stay length and previous cancellations? Explain why you selected them."
+7,Hotel Booking Cancellation,Phase 1 — Problem Definition & EDA,5,"What did your initial EDA reveal about missing values, outliers, class/target distribution, or important trends?"
+7,Hotel Booking Cancellation,Phase 2 — Methodology & Evaluation Metrics,1,"Why is the chosen ML task for “Hotel Booking Cancellation” classification, regression, forecasting, ranking, or another task?"
+7,Hotel Booking Cancellation,Phase 2 — Methodology & Evaluation Metrics,2,"How did you split the hotel booking data dataset, and how did you prevent data leakage?"
+7,Hotel Booking Cancellation,Phase 2 — Methodology & Evaluation Metrics,3,"Which evaluation metrics best measure performance for booking cancellation risk, and why are they appropriate?"
+7,Hotel Booking Cancellation,Phase 2 — Methodology & Evaluation Metrics,4,"What baseline did you establish before trying more complex models, and how does your proposed method compare?"
+7,Hotel Booking Cancellation,Phase 2 — Methodology & Evaluation Metrics,5,"How did you handle missing values, categorical fields, scaling, class imbalance, or date-related features in your pipeline?"
+7,Hotel Booking Cancellation,Phase 3 — Supervised Learning / Implementation,1,"Which supervised algorithm did you choose for “Hotel Booking Cancellation”, and why is it suitable for booking cancellation risk?"
+7,Hotel Booking Cancellation,Phase 3 — Supervised Learning / Implementation,2,"Explain how your model uses lead time, room type, deposit, booking channel, stay length and previous cancellations to produce its output."
+7,Hotel Booking Cancellation,Phase 3 — Supervised Learning / Implementation,3,"Which features had the strongest influence on the prediction, and how did you verify that influence?"
+7,Hotel Booking Cancellation,Phase 3 — Supervised Learning / Implementation,4,"What were the training and test results for your main metrics, and what do those values mean for this project?"
+7,Hotel Booking Cancellation,Phase 3 — Supervised Learning / Implementation,5,"What did you do to detect overfitting and improve generalisation, such as cross-validation, regularisation or tuning?"
+7,Hotel Booking Cancellation,Phase 4 — Unsupervised Learning,1,"What useful customer, property, booking, player, student, or operational segments could clustering reveal in “Hotel Booking Cancellation”?"
+7,Hotel Booking Cancellation,Phase 4 — Unsupervised Learning,2,"Which unsupervised method (such as K-Means, hierarchical clustering or PCA) did you use or propose, and why?"
+7,Hotel Booking Cancellation,Phase 4 — Unsupervised Learning,3,How did you scale features and choose the number of clusters or components for this dataset?
+7,Hotel Booking Cancellation,Phase 4 — Unsupervised Learning,4,"How would you interpret and label the clusters in terms of cancellation patterns across seasons, channels and customer segments?"
+7,Hotel Booking Cancellation,Phase 4 — Unsupervised Learning,5,"If unsupervised learning is not implemented in your current version, how could it add value without replacing the main prediction task?"
+7,Hotel Booking Cancellation,Phase 5 — Final Project Report,1,"How does your report connect the problem statement, dataset, methodology and results for “Hotel Booking Cancellation”?"
+7,Hotel Booking Cancellation,Phase 5 — Final Project Report,2,"Which table, chart or EDA visual best supports your main conclusion about hotel booking data, and why?"
+7,Hotel Booking Cancellation,Phase 5 — Final Project Report,3,"How did you document preprocessing, feature definitions, model settings and the experiment environment so another person can reproduce it?"
+7,Hotel Booking Cancellation,Phase 5 — Final Project Report,4,What are the key limitations or possible biases in the dataset and model for booking cancellation risk?
+7,Hotel Booking Cancellation,Phase 5 — Final Project Report,5,What specific future improvement would most increase the reliability or practical usefulness of this project?
+7,Hotel Booking Cancellation,Phase 6 — Presentation,1,"Summarise “Hotel Booking Cancellation” in one minute: problem, data, method and main result."
+7,Hotel Booking Cancellation,Phase 6 — Presentation,2,Which visual would you use to explain the most important finding about hotel booking data to a non-technical audience?
+7,Hotel Booking Cancellation,Phase 6 — Presentation,3,How would you explain the model's output for booking cancellation risk without overstating its certainty?
+7,Hotel Booking Cancellation,Phase 6 — Presentation,4,"What is the strongest evidence that your solution works, and what result or limitation should the audience know?"
+7,Hotel Booking Cancellation,Phase 6 — Presentation,5,"If you had one additional week, which improvement would you demonstrate first and how would you measure its effect?"
+7,Hotel Booking Cancellation,Phase 7 — Viva & Demonstration,1,Demonstrate one complete example in “Hotel Booking Cancellation” from entering or selecting inputs to interpreting the model output.
+7,Hotel Booking Cancellation,Phase 7 — Viva & Demonstration,2,Walk through the data-processing steps that convert raw hotel booking data records into model-ready features.
+7,Hotel Booking Cancellation,Phase 7 — Viva & Demonstration,3,Show how the application behaves when a required field is missing or an input is outside the range seen during training.
+7,Hotel Booking Cancellation,Phase 7 — Viva & Demonstration,4,Explain one incorrect prediction or failure case and how you would investigate and reduce similar errors.
+7,Hotel Booking Cancellation,Phase 7 — Viva & Demonstration,5,"What privacy, fairness, safety or operational concern is most important for this project, and what practical safeguard would you apply?"
+8,Machine Learning Project (title not confirmed),Phase 1 — Problem Definition & EDA,1,"The uploaded roster does not confirm Group 8's exact title. What specific real-world problem does your chosen ML project solve, and who is the intended user?"
+8,Machine Learning Project (title not confirmed),Phase 1 — Problem Definition & EDA,2,"Since Group 8's title is unconfirmed in the roster, state your exact target variable and define a measurable success criterion."
+8,Machine Learning Project (title not confirmed),Phase 1 — Problem Definition & EDA,3,"Which data source represents the project's application data, and what checks did you perform for reliability and permission to use it?"
+8,Machine Learning Project (title not confirmed),Phase 1 — Problem Definition & EDA,4,"Which of these inputs are most relevant: relevant input variables, target fields, dates and source metadata? Explain why you selected them."
+8,Machine Learning Project (title not confirmed),Phase 1 — Problem Definition & EDA,5,"What did your initial EDA reveal about missing values, outliers, class/target distribution, or important trends?"
+8,Machine Learning Project (title not confirmed),Phase 2 — Methodology & Evaluation Metrics,1,"Given that Group 8's exact title is not confirmed in the uploaded roster, explain how your selected method supports your stated project objective."
+8,Machine Learning Project (title not confirmed),Phase 2 — Methodology & Evaluation Metrics,2,"How did you split the the project's application data dataset, and how did you prevent data leakage?"
+8,Machine Learning Project (title not confirmed),Phase 2 — Methodology & Evaluation Metrics,3,"Which evaluation metrics best measure performance for the outcome defined in the project objective, and why are they appropriate?"
+8,Machine Learning Project (title not confirmed),Phase 2 — Methodology & Evaluation Metrics,4,"What baseline did you establish before trying more complex models, and how does your proposed method compare?"
+8,Machine Learning Project (title not confirmed),Phase 2 — Methodology & Evaluation Metrics,5,"How did you handle missing values, categorical fields, scaling, class imbalance, or date-related features in your pipeline?"
+8,Machine Learning Project (title not confirmed),Phase 3 — Supervised Learning / Implementation,1,"Given that Group 8's exact title is not confirmed in the uploaded roster, explain how your selected method supports your stated project objective."
+8,Machine Learning Project (title not confirmed),Phase 3 — Supervised Learning / Implementation,2,"Explain how your model uses relevant input variables, target fields, dates and source metadata to produce its output."
+8,Machine Learning Project (title not confirmed),Phase 3 — Supervised Learning / Implementation,3,"Which features had the strongest influence on the prediction, and how did you verify that influence?"
+8,Machine Learning Project (title not confirmed),Phase 3 — Supervised Learning / Implementation,4,"What were the training and test results for your main metrics, and what do those values mean for this project?"
+8,Machine Learning Project (title not confirmed),Phase 3 — Supervised Learning / Implementation,5,"What did you do to detect overfitting and improve generalisation, such as cross-validation, regularisation or tuning?"
+8,Machine Learning Project (title not confirmed),Phase 4 — Unsupervised Learning,1,"Given that Group 8's exact title is not confirmed in the uploaded roster, explain how your selected method supports your stated project objective."
+8,Machine Learning Project (title not confirmed),Phase 4 — Unsupervised Learning,2,"Which unsupervised method (such as K-Means, hierarchical clustering or PCA) did you use or propose, and why?"
+8,Machine Learning Project (title not confirmed),Phase 4 — Unsupervised Learning,3,How did you scale features and choose the number of clusters or components for this dataset?
+8,Machine Learning Project (title not confirmed),Phase 4 — Unsupervised Learning,4,"How would you interpret and label the clusters in terms of patterns, outliers, subgroup differences and changing data conditions?"
+8,Machine Learning Project (title not confirmed),Phase 4 — Unsupervised Learning,5,"If unsupervised learning is not implemented in your current version, how could it add value without replacing the main prediction task?"
+8,Machine Learning Project (title not confirmed),Phase 5 — Final Project Report,1,"Given that Group 8's exact title is not confirmed in the uploaded roster, explain how your selected method supports your stated project objective."
+8,Machine Learning Project (title not confirmed),Phase 5 — Final Project Report,2,"Which table, chart or EDA visual best supports your main conclusion about the project's application data, and why?"
+8,Machine Learning Project (title not confirmed),Phase 5 — Final Project Report,3,"How did you document preprocessing, feature definitions, model settings and the experiment environment so another person can reproduce it?"
+8,Machine Learning Project (title not confirmed),Phase 5 — Final Project Report,4,What are the key limitations or possible biases in the dataset and model for the outcome defined in the project objective?
+8,Machine Learning Project (title not confirmed),Phase 5 — Final Project Report,5,What specific future improvement would most increase the reliability or practical usefulness of this project?
+8,Machine Learning Project (title not confirmed),Phase 6 — Presentation,1,"Given that Group 8's exact title is not confirmed in the uploaded roster, explain how your selected method supports your stated project objective."
+8,Machine Learning Project (title not confirmed),Phase 6 — Presentation,2,Which visual would you use to explain the most important finding about the project's application data to a non-technical audience?
+8,Machine Learning Project (title not confirmed),Phase 6 — Presentation,3,How would you explain the model's output for the outcome defined in the project objective without overstating its certainty?
+8,Machine Learning Project (title not confirmed),Phase 6 — Presentation,4,"What is the strongest evidence that your solution works, and what result or limitation should the audience know?"
+8,Machine Learning Project (title not confirmed),Phase 6 — Presentation,5,"If you had one additional week, which improvement would you demonstrate first and how would you measure its effect?"
+8,Machine Learning Project (title not confirmed),Phase 7 — Viva & Demonstration,1,"Given that Group 8's exact title is not confirmed in the uploaded roster, explain how your selected method supports your stated project objective."
+8,Machine Learning Project (title not confirmed),Phase 7 — Viva & Demonstration,2,Walk through the data-processing steps that convert raw the project's application data records into model-ready features.
+8,Machine Learning Project (title not confirmed),Phase 7 — Viva & Demonstration,3,Show how the application behaves when a required field is missing or an input is outside the range seen during training.
+8,Machine Learning Project (title not confirmed),Phase 7 — Viva & Demonstration,4,Explain one incorrect prediction or failure case and how you would investigate and reduce similar errors.
+8,Machine Learning Project (title not confirmed),Phase 7 — Viva & Demonstration,5,"What privacy, fairness, safety or operational concern is most important for this project, and what practical safeguard would you apply?"
+9,House rent prediction,Phase 1 — Problem Definition & EDA,1,"What real-world problem does “House rent prediction” solve, and who would use the solution?"
+9,House rent prediction,Phase 1 — Problem Definition & EDA,2,"What is the exact prediction or analysis objective for House rent prediction, and how will you define success?"
+9,House rent prediction,Phase 1 — Problem Definition & EDA,3,"Which data source represents housing and property data, and what checks did you perform for reliability and permission to use it?"
+9,House rent prediction,Phase 1 — Problem Definition & EDA,4,"Which of these inputs are most relevant: location, area, bedrooms, property age, amenities and nearby facilities? Explain why you selected them."
+9,House rent prediction,Phase 1 — Problem Definition & EDA,5,"What did your initial EDA reveal about missing values, outliers, class/target distribution, or important trends?"
+9,House rent prediction,Phase 2 — Methodology & Evaluation Metrics,1,"Why is the chosen ML task for “House rent prediction” classification, regression, forecasting, ranking, or another task?"
+9,House rent prediction,Phase 2 — Methodology & Evaluation Metrics,2,"How did you split the housing and property data dataset, and how did you prevent data leakage?"
+9,House rent prediction,Phase 2 — Methodology & Evaluation Metrics,3,"Which evaluation metrics best measure performance for rent or sale price, and why are they appropriate?"
+9,House rent prediction,Phase 2 — Methodology & Evaluation Metrics,4,"What baseline did you establish before trying more complex models, and how does your proposed method compare?"
+9,House rent prediction,Phase 2 — Methodology & Evaluation Metrics,5,"How did you handle missing values, categorical fields, scaling, class imbalance, or date-related features in your pipeline?"
+9,House rent prediction,Phase 3 — Supervised Learning / Implementation,1,"Which supervised algorithm did you choose for “House rent prediction”, and why is it suitable for rent or sale price?"
+9,House rent prediction,Phase 3 — Supervised Learning / Implementation,2,"Explain how your model uses location, area, bedrooms, property age, amenities and nearby facilities to produce its output."
+9,House rent prediction,Phase 3 — Supervised Learning / Implementation,3,"Which features had the strongest influence on the prediction, and how did you verify that influence?"
+9,House rent prediction,Phase 3 — Supervised Learning / Implementation,4,"What were the training and test results for your main metrics, and what do those values mean for this project?"
+9,House rent prediction,Phase 3 — Supervised Learning / Implementation,5,"What did you do to detect overfitting and improve generalisation, such as cross-validation, regularisation or tuning?"
+9,House rent prediction,Phase 4 — Unsupervised Learning,1,"What useful customer, property, booking, player, student, or operational segments could clustering reveal in “House rent prediction”?"
+9,House rent prediction,Phase 4 — Unsupervised Learning,2,"Which unsupervised method (such as K-Means, hierarchical clustering or PCA) did you use or propose, and why?"
+9,House rent prediction,Phase 4 — Unsupervised Learning,3,How did you scale features and choose the number of clusters or components for this dataset?
+9,House rent prediction,Phase 4 — Unsupervised Learning,4,How would you interpret and label the clusters in terms of location-based price variation and unusual property listings?
+9,House rent prediction,Phase 4 — Unsupervised Learning,5,"If unsupervised learning is not implemented in your current version, how could it add value without replacing the main prediction task?"
+9,House rent prediction,Phase 5 — Final Project Report,1,"How does your report connect the problem statement, dataset, methodology and results for “House rent prediction”?"
+9,House rent prediction,Phase 5 — Final Project Report,2,"Which table, chart or EDA visual best supports your main conclusion about housing and property data, and why?"
+9,House rent prediction,Phase 5 — Final Project Report,3,"How did you document preprocessing, feature definitions, model settings and the experiment environment so another person can reproduce it?"
+9,House rent prediction,Phase 5 — Final Project Report,4,What are the key limitations or possible biases in the dataset and model for rent or sale price?
+9,House rent prediction,Phase 5 — Final Project Report,5,What specific future improvement would most increase the reliability or practical usefulness of this project?
+9,House rent prediction,Phase 6 — Presentation,1,"Summarise “House rent prediction” in one minute: problem, data, method and main result."
+9,House rent prediction,Phase 6 — Presentation,2,Which visual would you use to explain the most important finding about housing and property data to a non-technical audience?
+9,House rent prediction,Phase 6 — Presentation,3,How would you explain the model's output for rent or sale price without overstating its certainty?
+9,House rent prediction,Phase 6 — Presentation,4,"What is the strongest evidence that your solution works, and what result or limitation should the audience know?"
+9,House rent prediction,Phase 6 — Presentation,5,"If you had one additional week, which improvement would you demonstrate first and how would you measure its effect?"
+9,House rent prediction,Phase 7 — Viva & Demonstration,1,Demonstrate one complete example in “House rent prediction” from entering or selecting inputs to interpreting the model output.
+9,House rent prediction,Phase 7 — Viva & Demonstration,2,Walk through the data-processing steps that convert raw housing and property data records into model-ready features.
+9,House rent prediction,Phase 7 — Viva & Demonstration,3,Show how the application behaves when a required field is missing or an input is outside the range seen during training.
+9,House rent prediction,Phase 7 — Viva & Demonstration,4,Explain one incorrect prediction or failure case and how you would investigate and reduce similar errors.
+9,House rent prediction,Phase 7 — Viva & Demonstration,5,"What privacy, fairness, safety or operational concern is most important for this project, and what practical safeguard would you apply?"
+10,House price prediction,Phase 1 — Problem Definition & EDA,1,"What real-world problem does “House price prediction” solve, and who would use the solution?"
+10,House price prediction,Phase 1 — Problem Definition & EDA,2,"What is the exact prediction or analysis objective for House price prediction, and how will you define success?"
+10,House price prediction,Phase 1 — Problem Definition & EDA,3,"Which data source represents mobile phone market data, and what checks did you perform for reliability and permission to use it?"
+10,House price prediction,Phase 1 — Problem Definition & EDA,4,"Which of these inputs are most relevant: brand, model, RAM, storage, processor, condition and release year? Explain why you selected them."
+10,House price prediction,Phase 1 — Problem Definition & EDA,5,"What did your initial EDA reveal about missing values, outliers, class/target distribution, or important trends?"
+10,House price prediction,Phase 2 — Methodology & Evaluation Metrics,1,"Why is the chosen ML task for “House price prediction” classification, regression, forecasting, ranking, or another task?"
+10,House price prediction,Phase 2 — Methodology & Evaluation Metrics,2,"How did you split the mobile phone market data dataset, and how did you prevent data leakage?"
+10,House price prediction,Phase 2 — Methodology & Evaluation Metrics,3,"Which evaluation metrics best measure performance for phone price or price range, and why are they appropriate?"
+10,House price prediction,Phase 2 — Methodology & Evaluation Metrics,4,"What baseline did you establish before trying more complex models, and how does your proposed method compare?"
+10,House price prediction,Phase 2 — Methodology & Evaluation Metrics,5,"How did you handle missing values, categorical fields, scaling, class imbalance, or date-related features in your pipeline?"
+10,House price prediction,Phase 3 — Supervised Learning / Implementation,1,"Which supervised algorithm did you choose for “House price prediction”, and why is it suitable for phone price or price range?"
+10,House price prediction,Phase 3 — Supervised Learning / Implementation,2,"Explain how your model uses brand, model, RAM, storage, processor, condition and release year to produce its output."
+10,House price prediction,Phase 3 — Supervised Learning / Implementation,3,"Which features had the strongest influence on the prediction, and how did you verify that influence?"
+10,House price prediction,Phase 3 — Supervised Learning / Implementation,4,"What were the training and test results for your main metrics, and what do those values mean for this project?"
+10,House price prediction,Phase 3 — Supervised Learning / Implementation,5,"What did you do to detect overfitting and improve generalisation, such as cross-validation, regularisation or tuning?"
+10,House price prediction,Phase 4 — Unsupervised Learning,1,"What useful customer, property, booking, player, student, or operational segments could clustering reveal in “House price prediction”?"
+10,House price prediction,Phase 4 — Unsupervised Learning,2,"Which unsupervised method (such as K-Means, hierarchical clustering or PCA) did you use or propose, and why?"
+10,House price prediction,Phase 4 — Unsupervised Learning,3,How did you scale features and choose the number of clusters or components for this dataset?
+10,House price prediction,Phase 4 — Unsupervised Learning,4,"How would you interpret and label the clusters in terms of new model launches, depreciation and changing market prices?"
+10,House price prediction,Phase 4 — Unsupervised Learning,5,"If unsupervised learning is not implemented in your current version, how could it add value without replacing the main prediction task?"
+10,House price prediction,Phase 5 — Final Project Report,1,"How does your report connect the problem statement, dataset, methodology and results for “House price prediction”?"
+10,House price prediction,Phase 5 — Final Project Report,2,"Which table, chart or EDA visual best supports your main conclusion about mobile phone market data, and why?"
+10,House price prediction,Phase 5 — Final Project Report,3,"How did you document preprocessing, feature definitions, model settings and the experiment environment so another person can reproduce it?"
+10,House price prediction,Phase 5 — Final Project Report,4,What are the key limitations or possible biases in the dataset and model for phone price or price range?
+10,House price prediction,Phase 5 — Final Project Report,5,What specific future improvement would most increase the reliability or practical usefulness of this project?
+10,House price prediction,Phase 6 — Presentation,1,"Summarise “House price prediction” in one minute: problem, data, method and main result."
+10,House price prediction,Phase 6 — Presentation,2,Which visual would you use to explain the most important finding about mobile phone market data to a non-technical audience?
+10,House price prediction,Phase 6 — Presentation,3,How would you explain the model's output for phone price or price range without overstating its certainty?
+10,House price prediction,Phase 6 — Presentation,4,"What is the strongest evidence that your solution works, and what result or limitation should the audience know?"
+10,House price prediction,Phase 6 — Presentation,5,"If you had one additional week, which improvement would you demonstrate first and how would you measure its effect?"
+10,House price prediction,Phase 7 — Viva & Demonstration,1,Demonstrate one complete example in “House price prediction” from entering or selecting inputs to interpreting the model output.
+10,House price prediction,Phase 7 — Viva & Demonstration,2,Walk through the data-processing steps that convert raw mobile phone market data records into model-ready features.
+10,House price prediction,Phase 7 — Viva & Demonstration,3,Show how the application behaves when a required field is missing or an input is outside the range seen during training.
+10,House price prediction,Phase 7 — Viva & Demonstration,4,Explain one incorrect prediction or failure case and how you would investigate and reduce similar errors.
+10,House price prediction,Phase 7 — Viva & Demonstration,5,"What privacy, fairness, safety or operational concern is most important for this project, and what practical safeguard would you apply?"
+11,Email phishing detection,Phase 1 — Problem Definition & EDA,1,"What real-world problem does “Email phishing detection” solve, and who would use the solution?"
+11,Email phishing detection,Phase 1 — Problem Definition & EDA,2,"What is the exact prediction or analysis objective for Email phishing detection, and how will you define success?"
+11,Email phishing detection,Phase 1 — Problem Definition & EDA,3,"Which data source represents email and phishing detection data, and what checks did you perform for reliability and permission to use it?"
+11,Email phishing detection,Phase 1 — Problem Definition & EDA,4,"Which of these inputs are most relevant: sender, URL patterns, subject terms, attachments, headers and message text? Explain why you selected them."
+11,Email phishing detection,Phase 1 — Problem Definition & EDA,5,"What did your initial EDA reveal about missing values, outliers, class/target distribution, or important trends?"
+11,Email phishing detection,Phase 2 — Methodology & Evaluation Metrics,1,"Why is the chosen ML task for “Email phishing detection” classification, regression, forecasting, ranking, or another task?"
+11,Email phishing detection,Phase 2 — Methodology & Evaluation Metrics,2,"How did you split the email and phishing detection data dataset, and how did you prevent data leakage?"
+11,Email phishing detection,Phase 2 — Methodology & Evaluation Metrics,3,"Which evaluation metrics best measure performance for phishing versus legitimate email, and why are they appropriate?"
+11,Email phishing detection,Phase 2 — Methodology & Evaluation Metrics,4,"What baseline did you establish before trying more complex models, and how does your proposed method compare?"
+11,Email phishing detection,Phase 2 — Methodology & Evaluation Metrics,5,"How did you handle missing values, categorical fields, scaling, class imbalance, or date-related features in your pipeline?"
+11,Email phishing detection,Phase 3 — Supervised Learning / Implementation,1,"Which supervised algorithm did you choose for “Email phishing detection”, and why is it suitable for phishing versus legitimate email?"
+11,Email phishing detection,Phase 3 — Supervised Learning / Implementation,2,"Explain how your model uses sender, URL patterns, subject terms, attachments, headers and message text to produce its output."
+11,Email phishing detection,Phase 3 — Supervised Learning / Implementation,3,"Which features had the strongest influence on the prediction, and how did you verify that influence?"
+11,Email phishing detection,Phase 3 — Supervised Learning / Implementation,4,"What were the training and test results for your main metrics, and what do those values mean for this project?"
+11,Email phishing detection,Phase 3 — Supervised Learning / Implementation,5,"What did you do to detect overfitting and improve generalisation, such as cross-validation, regularisation or tuning?"
+11,Email phishing detection,Phase 4 — Unsupervised Learning,1,"What useful customer, property, booking, player, student, or operational segments could clustering reveal in “Email phishing detection”?"
+11,Email phishing detection,Phase 4 — Unsupervised Learning,2,"Which unsupervised method (such as K-Means, hierarchical clustering or PCA) did you use or propose, and why?"
+11,Email phishing detection,Phase 4 — Unsupervised Learning,3,How did you scale features and choose the number of clusters or components for this dataset?
+11,Email phishing detection,Phase 4 — Unsupervised Learning,4,"How would you interpret and label the clusters in terms of new phishing tactics, class imbalance and changing attacker behaviour?"
+11,Email phishing detection,Phase 4 — Unsupervised Learning,5,"If unsupervised learning is not implemented in your current version, how could it add value without replacing the main prediction task?"
+11,Email phishing detection,Phase 5 — Final Project Report,1,"How does your report connect the problem statement, dataset, methodology and results for “Email phishing detection”?"
+11,Email phishing detection,Phase 5 — Final Project Report,2,"Which table, chart or EDA visual best supports your main conclusion about email and phishing detection data, and why?"
+11,Email phishing detection,Phase 5 — Final Project Report,3,"How did you document preprocessing, feature definitions, model settings and the experiment environment so another person can reproduce it?"
+11,Email phishing detection,Phase 5 — Final Project Report,4,What are the key limitations or possible biases in the dataset and model for phishing versus legitimate email?
+11,Email phishing detection,Phase 5 — Final Project Report,5,What specific future improvement would most increase the reliability or practical usefulness of this project?
+11,Email phishing detection,Phase 6 — Presentation,1,"Summarise “Email phishing detection” in one minute: problem, data, method and main result."
+11,Email phishing detection,Phase 6 — Presentation,2,Which visual would you use to explain the most important finding about email and phishing detection data to a non-technical audience?
+11,Email phishing detection,Phase 6 — Presentation,3,How would you explain the model's output for phishing versus legitimate email without overstating its certainty?
+11,Email phishing detection,Phase 6 — Presentation,4,"What is the strongest evidence that your solution works, and what result or limitation should the audience know?"
+11,Email phishing detection,Phase 6 — Presentation,5,"If you had one additional week, which improvement would you demonstrate first and how would you measure its effect?"
+11,Email phishing detection,Phase 7 — Viva & Demonstration,1,Demonstrate one complete example in “Email phishing detection” from entering or selecting inputs to interpreting the model output.
+11,Email phishing detection,Phase 7 — Viva & Demonstration,2,Walk through the data-processing steps that convert raw email and phishing detection data records into model-ready features.
+11,Email phishing detection,Phase 7 — Viva & Demonstration,3,Show how the application behaves when a required field is missing or an input is outside the range seen during training.
+11,Email phishing detection,Phase 7 — Viva & Demonstration,4,Explain one incorrect prediction or failure case and how you would investigate and reduce similar errors.
+11,Email phishing detection,Phase 7 — Viva & Demonstration,5,"What privacy, fairness, safety or operational concern is most important for this project, and what practical safeguard would you apply?"
+12,Hostel EnergySense,Phase 1 — Problem Definition & EDA,1,"What real-world problem does “Hostel EnergySense” solve, and who would use the solution?"
+12,Hostel EnergySense,Phase 1 — Problem Definition & EDA,2,"What is the exact prediction or analysis objective for Hostel EnergySense, and how will you define success?"
+12,Hostel EnergySense,Phase 1 — Problem Definition & EDA,3,"Which data source represents hostel energy-consumption data, and what checks did you perform for reliability and permission to use it?"
+12,Hostel EnergySense,Phase 1 — Problem Definition & EDA,4,"Which of these inputs are most relevant: hour, occupancy, appliance usage, temperature, day type and meter readings? Explain why you selected them."
+12,Hostel EnergySense,Phase 1 — Problem Definition & EDA,5,"What did your initial EDA reveal about missing values, outliers, class/target distribution, or important trends?"
+12,Hostel EnergySense,Phase 2 — Methodology & Evaluation Metrics,1,"Why is the chosen ML task for “Hostel EnergySense” classification, regression, forecasting, ranking, or another task?"
+12,Hostel EnergySense,Phase 2 — Methodology & Evaluation Metrics,2,"How did you split the hostel energy-consumption data dataset, and how did you prevent data leakage?"
+12,Hostel EnergySense,Phase 2 — Methodology & Evaluation Metrics,3,"Which evaluation metrics best measure performance for energy consumption or high-consumption periods, and why are they appropriate?"
+12,Hostel EnergySense,Phase 2 — Methodology & Evaluation Metrics,4,"What baseline did you establish before trying more complex models, and how does your proposed method compare?"
+12,Hostel EnergySense,Phase 2 — Methodology & Evaluation Metrics,5,"How did you handle missing values, categorical fields, scaling, class imbalance, or date-related features in your pipeline?"
+12,Hostel EnergySense,Phase 3 — Supervised Learning / Implementation,1,"Which supervised algorithm did you choose for “Hostel EnergySense”, and why is it suitable for energy consumption or high-consumption periods?"
+12,Hostel EnergySense,Phase 3 — Supervised Learning / Implementation,2,"Explain how your model uses hour, occupancy, appliance usage, temperature, day type and meter readings to produce its output."
+12,Hostel EnergySense,Phase 3 — Supervised Learning / Implementation,3,"Which features had the strongest influence on the prediction, and how did you verify that influence?"
+12,Hostel EnergySense,Phase 3 — Supervised Learning / Implementation,4,"What were the training and test results for your main metrics, and what do those values mean for this project?"
+12,Hostel EnergySense,Phase 3 — Supervised Learning / Implementation,5,"What did you do to detect overfitting and improve generalisation, such as cross-validation, regularisation or tuning?"
+12,Hostel EnergySense,Phase 4 — Unsupervised Learning,1,"What useful customer, property, booking, player, student, or operational segments could clustering reveal in “Hostel EnergySense”?"
+12,Hostel EnergySense,Phase 4 — Unsupervised Learning,2,"Which unsupervised method (such as K-Means, hierarchical clustering or PCA) did you use or propose, and why?"
+12,Hostel EnergySense,Phase 4 — Unsupervised Learning,3,How did you scale features and choose the number of clusters or components for this dataset?
+12,Hostel EnergySense,Phase 4 — Unsupervised Learning,4,"How would you interpret and label the clusters in terms of daily/weekly usage patterns, abnormal consumption and occupancy changes?"
+12,Hostel EnergySense,Phase 4 — Unsupervised Learning,5,"If unsupervised learning is not implemented in your current version, how could it add value without replacing the main prediction task?"
+12,Hostel EnergySense,Phase 5 — Final Project Report,1,"How does your report connect the problem statement, dataset, methodology and results for “Hostel EnergySense”?"
+12,Hostel EnergySense,Phase 5 — Final Project Report,2,"Which table, chart or EDA visual best supports your main conclusion about hostel energy-consumption data, and why?"
+12,Hostel EnergySense,Phase 5 — Final Project Report,3,"How did you document preprocessing, feature definitions, model settings and the experiment environment so another person can reproduce it?"
+12,Hostel EnergySense,Phase 5 — Final Project Report,4,What are the key limitations or possible biases in the dataset and model for energy consumption or high-consumption periods?
+12,Hostel EnergySense,Phase 5 — Final Project Report,5,What specific future improvement would most increase the reliability or practical usefulness of this project?
+12,Hostel EnergySense,Phase 6 — Presentation,1,"Summarise “Hostel EnergySense” in one minute: problem, data, method and main result."
+12,Hostel EnergySense,Phase 6 — Presentation,2,Which visual would you use to explain the most important finding about hostel energy-consumption data to a non-technical audience?
+12,Hostel EnergySense,Phase 6 — Presentation,3,How would you explain the model's output for energy consumption or high-consumption periods without overstating its certainty?
+12,Hostel EnergySense,Phase 6 — Presentation,4,"What is the strongest evidence that your solution works, and what result or limitation should the audience know?"
+12,Hostel EnergySense,Phase 6 — Presentation,5,"If you had one additional week, which improvement would you demonstrate first and how would you measure its effect?"
+12,Hostel EnergySense,Phase 7 — Viva & Demonstration,1,Demonstrate one complete example in “Hostel EnergySense” from entering or selecting inputs to interpreting the model output.
+12,Hostel EnergySense,Phase 7 — Viva & Demonstration,2,Walk through the data-processing steps that convert raw hostel energy-consumption data records into model-ready features.
+12,Hostel EnergySense,Phase 7 — Viva & Demonstration,3,Show how the application behaves when a required field is missing or an input is outside the range seen during training.
+12,Hostel EnergySense,Phase 7 — Viva & Demonstration,4,Explain one incorrect prediction or failure case and how you would investigate and reduce similar errors.
+12,Hostel EnergySense,Phase 7 — Viva & Demonstration,5,"What privacy, fairness, safety or operational concern is most important for this project, and what practical safeguard would you apply?"
+13,Flight Price Prediction,Phase 1 — Problem Definition & EDA,1,"What real-world problem does “Flight Price Prediction” solve, and who would use the solution?"
+13,Flight Price Prediction,Phase 1 — Problem Definition & EDA,2,"What is the exact prediction or analysis objective for Flight Price Prediction, and how will you define success?"
+13,Flight Price Prediction,Phase 1 — Problem Definition & EDA,3,"Which data source represents travel and booking data, and what checks did you perform for reliability and permission to use it?"
+13,Flight Price Prediction,Phase 1 — Problem Definition & EDA,4,"Which of these inputs are most relevant: destination, route, travel date, season, booking lead time and price? Explain why you selected them."
+13,Flight Price Prediction,Phase 1 — Problem Definition & EDA,5,"What did your initial EDA reveal about missing values, outliers, class/target distribution, or important trends?"
+13,Flight Price Prediction,Phase 2 — Methodology & Evaluation Metrics,1,"Why is the chosen ML task for “Flight Price Prediction” classification, regression, forecasting, ranking, or another task?"
+13,Flight Price Prediction,Phase 2 — Methodology & Evaluation Metrics,2,"How did you split the travel and booking data dataset, and how did you prevent data leakage?"
+13,Flight Price Prediction,Phase 2 — Methodology & Evaluation Metrics,3,"Which evaluation metrics best measure performance for booking conversion, trip preferences, flight fares or travel planning outcomes, and why are they appropriate?"
+13,Flight Price Prediction,Phase 2 — Methodology & Evaluation Metrics,4,"What baseline did you establish before trying more complex models, and how does your proposed method compare?"
+13,Flight Price Prediction,Phase 2 — Methodology & Evaluation Metrics,5,"How did you handle missing values, categorical fields, scaling, class imbalance, or date-related features in your pipeline?"
+13,Flight Price Prediction,Phase 3 — Supervised Learning / Implementation,1,"Which supervised algorithm did you choose for “Flight Price Prediction”, and why is it suitable for booking conversion, trip preferences, flight fares or travel planning outcomes?"
+13,Flight Price Prediction,Phase 3 — Supervised Learning / Implementation,2,"Explain how your model uses destination, route, travel date, season, booking lead time and price to produce its output."
+13,Flight Price Prediction,Phase 3 — Supervised Learning / Implementation,3,"Which features had the strongest influence on the prediction, and how did you verify that influence?"
+13,Flight Price Prediction,Phase 3 — Supervised Learning / Implementation,4,"What were the training and test results for your main metrics, and what do those values mean for this project?"
+13,Flight Price Prediction,Phase 3 — Supervised Learning / Implementation,5,"What did you do to detect overfitting and improve generalisation, such as cross-validation, regularisation or tuning?"
+13,Flight Price Prediction,Phase 4 — Unsupervised Learning,1,"What useful customer, property, booking, player, student, or operational segments could clustering reveal in “Flight Price Prediction”?"
+13,Flight Price Prediction,Phase 4 — Unsupervised Learning,2,"Which unsupervised method (such as K-Means, hierarchical clustering or PCA) did you use or propose, and why?"
+13,Flight Price Prediction,Phase 4 — Unsupervised Learning,3,How did you scale features and choose the number of clusters or components for this dataset?
+13,Flight Price Prediction,Phase 4 — Unsupervised Learning,4,"How would you interpret and label the clusters in terms of availability, seasonality, demand peaks and changing travel conditions?"
+13,Flight Price Prediction,Phase 4 — Unsupervised Learning,5,"If unsupervised learning is not implemented in your current version, how could it add value without replacing the main prediction task?"
+13,Flight Price Prediction,Phase 5 — Final Project Report,1,"How does your report connect the problem statement, dataset, methodology and results for “Flight Price Prediction”?"
+13,Flight Price Prediction,Phase 5 — Final Project Report,2,"Which table, chart or EDA visual best supports your main conclusion about travel and booking data, and why?"
+13,Flight Price Prediction,Phase 5 — Final Project Report,3,"How did you document preprocessing, feature definitions, model settings and the experiment environment so another person can reproduce it?"
+13,Flight Price Prediction,Phase 5 — Final Project Report,4,"What are the key limitations or possible biases in the dataset and model for booking conversion, trip preferences, flight fares or travel planning outcomes?"
+13,Flight Price Prediction,Phase 5 — Final Project Report,5,What specific future improvement would most increase the reliability or practical usefulness of this project?
+13,Flight Price Prediction,Phase 6 — Presentation,1,"Summarise “Flight Price Prediction” in one minute: problem, data, method and main result."
+13,Flight Price Prediction,Phase 6 — Presentation,2,Which visual would you use to explain the most important finding about travel and booking data to a non-technical audience?
+13,Flight Price Prediction,Phase 6 — Presentation,3,"How would you explain the model's output for booking conversion, trip preferences, flight fares or travel planning outcomes without overstating its certainty?"
+13,Flight Price Prediction,Phase 6 — Presentation,4,"What is the strongest evidence that your solution works, and what result or limitation should the audience know?"
+13,Flight Price Prediction,Phase 6 — Presentation,5,"If you had one additional week, which improvement would you demonstrate first and how would you measure its effect?"
+13,Flight Price Prediction,Phase 7 — Viva & Demonstration,1,Demonstrate one complete example in “Flight Price Prediction” from entering or selecting inputs to interpreting the model output.
+13,Flight Price Prediction,Phase 7 — Viva & Demonstration,2,Walk through the data-processing steps that convert raw travel and booking data records into model-ready features.
+13,Flight Price Prediction,Phase 7 — Viva & Demonstration,3,Show how the application behaves when a required field is missing or an input is outside the range seen during training.
+13,Flight Price Prediction,Phase 7 — Viva & Demonstration,4,Explain one incorrect prediction or failure case and how you would investigate and reduce similar errors.
+13,Flight Price Prediction,Phase 7 — Viva & Demonstration,5,"What privacy, fairness, safety or operational concern is most important for this project, and what practical safeguard would you apply?"
+14,Telco Churn Prediction System,Phase 1 — Problem Definition & EDA,1,"What real-world problem does “Telco Churn Prediction System” solve, and who would use the solution?"
+14,Telco Churn Prediction System,Phase 1 — Problem Definition & EDA,2,"What is the exact prediction or analysis objective for Telco Churn Prediction System, and how will you define success?"
+14,Telco Churn Prediction System,Phase 1 — Problem Definition & EDA,3,"Which data source represents telecom customer data, and what checks did you perform for reliability and permission to use it?"
+14,Telco Churn Prediction System,Phase 1 — Problem Definition & EDA,4,"Which of these inputs are most relevant: tenure, contract, monthly charges, service usage, support calls and payment method? Explain why you selected them."
+14,Telco Churn Prediction System,Phase 1 — Problem Definition & EDA,5,"What did your initial EDA reveal about missing values, outliers, class/target distribution, or important trends?"
+14,Telco Churn Prediction System,Phase 2 — Methodology & Evaluation Metrics,1,"Why is the chosen ML task for “Telco Churn Prediction System” classification, regression, forecasting, ranking, or another task?"
+14,Telco Churn Prediction System,Phase 2 — Methodology & Evaluation Metrics,2,"How did you split the telecom customer data dataset, and how did you prevent data leakage?"
+14,Telco Churn Prediction System,Phase 2 — Methodology & Evaluation Metrics,3,"Which evaluation metrics best measure performance for customer churn risk, and why are they appropriate?"
+14,Telco Churn Prediction System,Phase 2 — Methodology & Evaluation Metrics,4,"What baseline did you establish before trying more complex models, and how does your proposed method compare?"
+14,Telco Churn Prediction System,Phase 2 — Methodology & Evaluation Metrics,5,"How did you handle missing values, categorical fields, scaling, class imbalance, or date-related features in your pipeline?"
+14,Telco Churn Prediction System,Phase 3 — Supervised Learning / Implementation,1,"Which supervised algorithm did you choose for “Telco Churn Prediction System”, and why is it suitable for customer churn risk?"
+14,Telco Churn Prediction System,Phase 3 — Supervised Learning / Implementation,2,"Explain how your model uses tenure, contract, monthly charges, service usage, support calls and payment method to produce its output."
+14,Telco Churn Prediction System,Phase 3 — Supervised Learning / Implementation,3,"Which features had the strongest influence on the prediction, and how did you verify that influence?"
+14,Telco Churn Prediction System,Phase 3 — Supervised Learning / Implementation,4,"What were the training and test results for your main metrics, and what do those values mean for this project?"
+14,Telco Churn Prediction System,Phase 3 — Supervised Learning / Implementation,5,"What did you do to detect overfitting and improve generalisation, such as cross-validation, regularisation or tuning?"
+14,Telco Churn Prediction System,Phase 4 — Unsupervised Learning,1,"What useful customer, property, booking, player, student, or operational segments could clustering reveal in “Telco Churn Prediction System”?"
+14,Telco Churn Prediction System,Phase 4 — Unsupervised Learning,2,"Which unsupervised method (such as K-Means, hierarchical clustering or PCA) did you use or propose, and why?"
+14,Telco Churn Prediction System,Phase 4 — Unsupervised Learning,3,How did you scale features and choose the number of clusters or components for this dataset?
+14,Telco Churn Prediction System,Phase 4 — Unsupervised Learning,4,"How would you interpret and label the clusters in terms of at-risk customer segments, service changes and retention patterns?"
+14,Telco Churn Prediction System,Phase 4 — Unsupervised Learning,5,"If unsupervised learning is not implemented in your current version, how could it add value without replacing the main prediction task?"
+14,Telco Churn Prediction System,Phase 5 — Final Project Report,1,"How does your report connect the problem statement, dataset, methodology and results for “Telco Churn Prediction System”?"
+14,Telco Churn Prediction System,Phase 5 — Final Project Report,2,"Which table, chart or EDA visual best supports your main conclusion about telecom customer data, and why?"
+14,Telco Churn Prediction System,Phase 5 — Final Project Report,3,"How did you document preprocessing, feature definitions, model settings and the experiment environment so another person can reproduce it?"
+14,Telco Churn Prediction System,Phase 5 — Final Project Report,4,What are the key limitations or possible biases in the dataset and model for customer churn risk?
+14,Telco Churn Prediction System,Phase 5 — Final Project Report,5,What specific future improvement would most increase the reliability or practical usefulness of this project?
+14,Telco Churn Prediction System,Phase 6 — Presentation,1,"Summarise “Telco Churn Prediction System” in one minute: problem, data, method and main result."
+14,Telco Churn Prediction System,Phase 6 — Presentation,2,Which visual would you use to explain the most important finding about telecom customer data to a non-technical audience?
+14,Telco Churn Prediction System,Phase 6 — Presentation,3,How would you explain the model's output for customer churn risk without overstating its certainty?
+14,Telco Churn Prediction System,Phase 6 — Presentation,4,"What is the strongest evidence that your solution works, and what result or limitation should the audience know?"
+14,Telco Churn Prediction System,Phase 6 — Presentation,5,"If you had one additional week, which improvement would you demonstrate first and how would you measure its effect?"
+14,Telco Churn Prediction System,Phase 7 — Viva & Demonstration,1,Demonstrate one complete example in “Telco Churn Prediction System” from entering or selecting inputs to interpreting the model output.
+14,Telco Churn Prediction System,Phase 7 — Viva & Demonstration,2,Walk through the data-processing steps that convert raw telecom customer data records into model-ready features.
+14,Telco Churn Prediction System,Phase 7 — Viva & Demonstration,3,Show how the application behaves when a required field is missing or an input is outside the range seen during training.
+14,Telco Churn Prediction System,Phase 7 — Viva & Demonstration,4,Explain one incorrect prediction or failure case and how you would investigate and reduce similar errors.
+14,Telco Churn Prediction System,Phase 7 — Viva & Demonstration,5,"What privacy, fairness, safety or operational concern is most important for this project, and what practical safeguard would you apply?"
+15,Cancer Awareness and Prediction System,Phase 1 — Problem Definition & EDA,1,"What real-world problem does “Cancer Awareness and Prediction System” solve, and who would use the solution?"
+15,Cancer Awareness and Prediction System,Phase 1 — Problem Definition & EDA,2,"What is the exact prediction or analysis objective for Cancer Awareness and Prediction System, and how will you define success?"
+15,Cancer Awareness and Prediction System,Phase 1 — Problem Definition & EDA,3,"Which data source represents health and cancer-related data, and what checks did you perform for reliability and permission to use it?"
+15,Cancer Awareness and Prediction System,Phase 1 — Problem Definition & EDA,4,"Which of these inputs are most relevant: screening indicators, symptoms, demographic variables and relevant test measurements? Explain why you selected them."
+15,Cancer Awareness and Prediction System,Phase 1 — Problem Definition & EDA,5,"What did your initial EDA reveal about missing values, outliers, class/target distribution, or important trends?"
+15,Cancer Awareness and Prediction System,Phase 2 — Methodology & Evaluation Metrics,1,"Why is the chosen ML task for “Cancer Awareness and Prediction System” classification, regression, forecasting, ranking, or another task?"
+15,Cancer Awareness and Prediction System,Phase 2 — Methodology & Evaluation Metrics,2,"How did you split the health and cancer-related data dataset, and how did you prevent data leakage?"
+15,Cancer Awareness and Prediction System,Phase 2 — Methodology & Evaluation Metrics,3,"Which evaluation metrics best measure performance for a carefully defined prediction or awareness category, and why are they appropriate?"
+15,Cancer Awareness and Prediction System,Phase 2 — Methodology & Evaluation Metrics,4,"What baseline did you establish before trying more complex models, and how does your proposed method compare?"
+15,Cancer Awareness and Prediction System,Phase 2 — Methodology & Evaluation Metrics,5,"How did you handle missing values, categorical fields, scaling, class imbalance, or date-related features in your pipeline?"
+15,Cancer Awareness and Prediction System,Phase 3 — Supervised Learning / Implementation,1,"Which supervised algorithm did you choose for “Cancer Awareness and Prediction System”, and why is it suitable for a carefully defined prediction or awareness category?"
+15,Cancer Awareness and Prediction System,Phase 3 — Supervised Learning / Implementation,2,"Explain how your model uses screening indicators, symptoms, demographic variables and relevant test measurements to produce its output."
+15,Cancer Awareness and Prediction System,Phase 3 — Supervised Learning / Implementation,3,"Which features had the strongest influence on the prediction, and how did you verify that influence?"
+15,Cancer Awareness and Prediction System,Phase 3 — Supervised Learning / Implementation,4,"What were the training and test results for your main metrics, and what do those values mean for this project?"
+15,Cancer Awareness and Prediction System,Phase 3 — Supervised Learning / Implementation,5,"What did you do to detect overfitting and improve generalisation, such as cross-validation, regularisation or tuning?"
+15,Cancer Awareness and Prediction System,Phase 4 — Unsupervised Learning,1,"What useful customer, property, booking, player, student, or operational segments could clustering reveal in “Cancer Awareness and Prediction System”?"
+15,Cancer Awareness and Prediction System,Phase 4 — Unsupervised Learning,2,"Which unsupervised method (such as K-Means, hierarchical clustering or PCA) did you use or propose, and why?"
+15,Cancer Awareness and Prediction System,Phase 4 — Unsupervised Learning,3,How did you scale features and choose the number of clusters or components for this dataset?
+15,Cancer Awareness and Prediction System,Phase 4 — Unsupervised Learning,4,"How would you interpret and label the clusters in terms of class imbalance, uncertainty, privacy and the cost of false predictions?"
+15,Cancer Awareness and Prediction System,Phase 4 — Unsupervised Learning,5,"If unsupervised learning is not implemented in your current version, how could it add value without replacing the main prediction task?"
+15,Cancer Awareness and Prediction System,Phase 5 — Final Project Report,1,"How does your report connect the problem statement, dataset, methodology and results for “Cancer Awareness and Prediction System”?"
+15,Cancer Awareness and Prediction System,Phase 5 — Final Project Report,2,"Which table, chart or EDA visual best supports your main conclusion about health and cancer-related data, and why?"
+15,Cancer Awareness and Prediction System,Phase 5 — Final Project Report,3,"How did you document preprocessing, feature definitions, model settings and the experiment environment so another person can reproduce it?"
+15,Cancer Awareness and Prediction System,Phase 5 — Final Project Report,4,What are the key limitations or possible biases in the dataset and model for a carefully defined prediction or awareness category?
+15,Cancer Awareness and Prediction System,Phase 5 — Final Project Report,5,What specific future improvement would most increase the reliability or practical usefulness of this project?
+15,Cancer Awareness and Prediction System,Phase 6 — Presentation,1,"Summarise “Cancer Awareness and Prediction System” in one minute: problem, data, method and main result."
+15,Cancer Awareness and Prediction System,Phase 6 — Presentation,2,Which visual would you use to explain the most important finding about health and cancer-related data to a non-technical audience?
+15,Cancer Awareness and Prediction System,Phase 6 — Presentation,3,How would you explain the model's output for a carefully defined prediction or awareness category without overstating its certainty?
+15,Cancer Awareness and Prediction System,Phase 6 — Presentation,4,"What is the strongest evidence that your solution works, and what result or limitation should the audience know?"
+15,Cancer Awareness and Prediction System,Phase 6 — Presentation,5,"If you had one additional week, which improvement would you demonstrate first and how would you measure its effect?"
+15,Cancer Awareness and Prediction System,Phase 7 — Viva & Demonstration,1,Demonstrate one complete example in “Cancer Awareness and Prediction System” from entering or selecting inputs to interpreting the model output.
+15,Cancer Awareness and Prediction System,Phase 7 — Viva & Demonstration,2,Walk through the data-processing steps that convert raw health and cancer-related data records into model-ready features.
+15,Cancer Awareness and Prediction System,Phase 7 — Viva & Demonstration,3,Show how the application behaves when a required field is missing or an input is outside the range seen during training.
+15,Cancer Awareness and Prediction System,Phase 7 — Viva & Demonstration,4,Explain one incorrect prediction or failure case and how you would investigate and reduce similar errors.
+15,Cancer Awareness and Prediction System,Phase 7 — Viva & Demonstration,5,"What privacy, fairness, safety or operational concern is most important for this project, and what practical safeguard would you apply?"
+16,Examination Preparation & Performance Analyzer,Phase 1 — Problem Definition & EDA,1,"What real-world problem does “Examination Preparation & Performance Analyzer” solve, and who would use the solution?"
+16,Examination Preparation & Performance Analyzer,Phase 1 — Problem Definition & EDA,2,"What is the exact prediction or analysis objective for Examination Preparation & Performance Analyzer, and how will you define success?"
+16,Examination Preparation & Performance Analyzer,Phase 1 — Problem Definition & EDA,3,"Which data source represents student learning and performance data, and what checks did you perform for reliability and permission to use it?"
+16,Examination Preparation & Performance Analyzer,Phase 1 — Problem Definition & EDA,4,"Which of these inputs are most relevant: attendance, practice time, preparation, assessment scores and survey responses? Explain why you selected them."
+16,Examination Preparation & Performance Analyzer,Phase 1 — Problem Definition & EDA,5,"What did your initial EDA reveal about missing values, outliers, class/target distribution, or important trends?"
+16,Examination Preparation & Performance Analyzer,Phase 2 — Methodology & Evaluation Metrics,1,"Why is the chosen ML task for “Examination Preparation & Performance Analyzer” classification, regression, forecasting, ranking, or another task?"
+16,Examination Preparation & Performance Analyzer,Phase 2 — Methodology & Evaluation Metrics,2,"How did you split the student learning and performance data dataset, and how did you prevent data leakage?"
+16,Examination Preparation & Performance Analyzer,Phase 2 — Methodology & Evaluation Metrics,3,"Which evaluation metrics best measure performance for performance, preparation needs or stress category, and why are they appropriate?"
+16,Examination Preparation & Performance Analyzer,Phase 2 — Methodology & Evaluation Metrics,4,"What baseline did you establish before trying more complex models, and how does your proposed method compare?"
+16,Examination Preparation & Performance Analyzer,Phase 2 — Methodology & Evaluation Metrics,5,"How did you handle missing values, categorical fields, scaling, class imbalance, or date-related features in your pipeline?"
+16,Examination Preparation & Performance Analyzer,Phase 3 — Supervised Learning / Implementation,1,"Which supervised algorithm did you choose for “Examination Preparation & Performance Analyzer”, and why is it suitable for performance, preparation needs or stress category?"
+16,Examination Preparation & Performance Analyzer,Phase 3 — Supervised Learning / Implementation,2,"Explain how your model uses attendance, practice time, preparation, assessment scores and survey responses to produce its output."
+16,Examination Preparation & Performance Analyzer,Phase 3 — Supervised Learning / Implementation,3,"Which features had the strongest influence on the prediction, and how did you verify that influence?"
+16,Examination Preparation & Performance Analyzer,Phase 3 — Supervised Learning / Implementation,4,"What were the training and test results for your main metrics, and what do those values mean for this project?"
+16,Examination Preparation & Performance Analyzer,Phase 3 — Supervised Learning / Implementation,5,"What did you do to detect overfitting and improve generalisation, such as cross-validation, regularisation or tuning?"
+16,Examination Preparation & Performance Analyzer,Phase 4 — Unsupervised Learning,1,"What useful customer, property, booking, player, student, or operational segments could clustering reveal in “Examination Preparation & Performance Analyzer”?"
+16,Examination Preparation & Performance Analyzer,Phase 4 — Unsupervised Learning,2,"Which unsupervised method (such as K-Means, hierarchical clustering or PCA) did you use or propose, and why?"
+16,Examination Preparation & Performance Analyzer,Phase 4 — Unsupervised Learning,3,How did you scale features and choose the number of clusters or components for this dataset?
+16,Examination Preparation & Performance Analyzer,Phase 4 — Unsupervised Learning,4,"How would you interpret and label the clusters in terms of student groups, missing responses, privacy and factors associated with outcomes?"
+16,Examination Preparation & Performance Analyzer,Phase 4 — Unsupervised Learning,5,"If unsupervised learning is not implemented in your current version, how could it add value without replacing the main prediction task?"
+16,Examination Preparation & Performance Analyzer,Phase 5 — Final Project Report,1,"How does your report connect the problem statement, dataset, methodology and results for “Examination Preparation & Performance Analyzer”?"
+16,Examination Preparation & Performance Analyzer,Phase 5 — Final Project Report,2,"Which table, chart or EDA visual best supports your main conclusion about student learning and performance data, and why?"
+16,Examination Preparation & Performance Analyzer,Phase 5 — Final Project Report,3,"How did you document preprocessing, feature definitions, model settings and the experiment environment so another person can reproduce it?"
+16,Examination Preparation & Performance Analyzer,Phase 5 — Final Project Report,4,"What are the key limitations or possible biases in the dataset and model for performance, preparation needs or stress category?"
+16,Examination Preparation & Performance Analyzer,Phase 5 — Final Project Report,5,What specific future improvement would most increase the reliability or practical usefulness of this project?
+16,Examination Preparation & Performance Analyzer,Phase 6 — Presentation,1,"Summarise “Examination Preparation & Performance Analyzer” in one minute: problem, data, method and main result."
+16,Examination Preparation & Performance Analyzer,Phase 6 — Presentation,2,Which visual would you use to explain the most important finding about student learning and performance data to a non-technical audience?
+16,Examination Preparation & Performance Analyzer,Phase 6 — Presentation,3,"How would you explain the model's output for performance, preparation needs or stress category without overstating its certainty?"
+16,Examination Preparation & Performance Analyzer,Phase 6 — Presentation,4,"What is the strongest evidence that your solution works, and what result or limitation should the audience know?"
+16,Examination Preparation & Performance Analyzer,Phase 6 — Presentation,5,"If you had one additional week, which improvement would you demonstrate first and how would you measure its effect?"
+16,Examination Preparation & Performance Analyzer,Phase 7 — Viva & Demonstration,1,Demonstrate one complete example in “Examination Preparation & Performance Analyzer” from entering or selecting inputs to interpreting the model output.
+16,Examination Preparation & Performance Analyzer,Phase 7 — Viva & Demonstration,2,Walk through the data-processing steps that convert raw student learning and performance data records into model-ready features.
+16,Examination Preparation & Performance Analyzer,Phase 7 — Viva & Demonstration,3,Show how the application behaves when a required field is missing or an input is outside the range seen during training.
+16,Examination Preparation & Performance Analyzer,Phase 7 — Viva & Demonstration,4,Explain one incorrect prediction or failure case and how you would investigate and reduce similar errors.
+16,Examination Preparation & Performance Analyzer,Phase 7 — Viva & Demonstration,5,"What privacy, fairness, safety or operational concern is most important for this project, and what practical safeguard would you apply?"
+17,Student Stress Level Classification and Psychological Factor,Phase 1 — Problem Definition & EDA,1,"The roster title appears incomplete (“Student Stress Level Classification and Psychological Factor”). What is the complete approved title, and what problem does the project address?"
+17,Student Stress Level Classification and Psychological Factor,Phase 1 — Problem Definition & EDA,2,"What is the exact prediction or analysis objective for Student Stress Level Classification and Psychological Factor, and how will you define success?"
+17,Student Stress Level Classification and Psychological Factor,Phase 1 — Problem Definition & EDA,3,"Which data source represents student learning and performance data, and what checks did you perform for reliability and permission to use it?"
+17,Student Stress Level Classification and Psychological Factor,Phase 1 — Problem Definition & EDA,4,"Which of these inputs are most relevant: attendance, practice time, preparation, assessment scores and survey responses? Explain why you selected them."
+17,Student Stress Level Classification and Psychological Factor,Phase 1 — Problem Definition & EDA,5,"What did your initial EDA reveal about missing values, outliers, class/target distribution, or important trends?"
+17,Student Stress Level Classification and Psychological Factor,Phase 2 — Methodology & Evaluation Metrics,1,"Why is the chosen ML task for “Student Stress Level Classification and Psychological Factor” classification, regression, forecasting, ranking, or another task?"
+17,Student Stress Level Classification and Psychological Factor,Phase 2 — Methodology & Evaluation Metrics,2,"How did you split the student learning and performance data dataset, and how did you prevent data leakage?"
+17,Student Stress Level Classification and Psychological Factor,Phase 2 — Methodology & Evaluation Metrics,3,"Which evaluation metrics best measure performance for performance, preparation needs or stress category, and why are they appropriate?"
+17,Student Stress Level Classification and Psychological Factor,Phase 2 — Methodology & Evaluation Metrics,4,"What baseline did you establish before trying more complex models, and how does your proposed method compare?"
+17,Student Stress Level Classification and Psychological Factor,Phase 2 — Methodology & Evaluation Metrics,5,"How did you handle missing values, categorical fields, scaling, class imbalance, or date-related features in your pipeline?"
+17,Student Stress Level Classification and Psychological Factor,Phase 3 — Supervised Learning / Implementation,1,"Which supervised algorithm did you choose for “Student Stress Level Classification and Psychological Factor”, and why is it suitable for performance, preparation needs or stress category?"
+17,Student Stress Level Classification and Psychological Factor,Phase 3 — Supervised Learning / Implementation,2,"Explain how your model uses attendance, practice time, preparation, assessment scores and survey responses to produce its output."
+17,Student Stress Level Classification and Psychological Factor,Phase 3 — Supervised Learning / Implementation,3,"Which features had the strongest influence on the prediction, and how did you verify that influence?"
+17,Student Stress Level Classification and Psychological Factor,Phase 3 — Supervised Learning / Implementation,4,"What were the training and test results for your main metrics, and what do those values mean for this project?"
+17,Student Stress Level Classification and Psychological Factor,Phase 3 — Supervised Learning / Implementation,5,"What did you do to detect overfitting and improve generalisation, such as cross-validation, regularisation or tuning?"
+17,Student Stress Level Classification and Psychological Factor,Phase 4 — Unsupervised Learning,1,"What useful customer, property, booking, player, student, or operational segments could clustering reveal in “Student Stress Level Classification and Psychological Factor”?"
+17,Student Stress Level Classification and Psychological Factor,Phase 4 — Unsupervised Learning,2,"Which unsupervised method (such as K-Means, hierarchical clustering or PCA) did you use or propose, and why?"
+17,Student Stress Level Classification and Psychological Factor,Phase 4 — Unsupervised Learning,3,How did you scale features and choose the number of clusters or components for this dataset?
+17,Student Stress Level Classification and Psychological Factor,Phase 4 — Unsupervised Learning,4,"How would you interpret and label the clusters in terms of student groups, missing responses, privacy and factors associated with outcomes?"
+17,Student Stress Level Classification and Psychological Factor,Phase 4 — Unsupervised Learning,5,"If unsupervised learning is not implemented in your current version, how could it add value without replacing the main prediction task?"
+17,Student Stress Level Classification and Psychological Factor,Phase 5 — Final Project Report,1,"How does your report connect the problem statement, dataset, methodology and results for “Student Stress Level Classification and Psychological Factor”?"
+17,Student Stress Level Classification and Psychological Factor,Phase 5 — Final Project Report,2,"Which table, chart or EDA visual best supports your main conclusion about student learning and performance data, and why?"
+17,Student Stress Level Classification and Psychological Factor,Phase 5 — Final Project Report,3,"How did you document preprocessing, feature definitions, model settings and the experiment environment so another person can reproduce it?"
+17,Student Stress Level Classification and Psychological Factor,Phase 5 — Final Project Report,4,"What are the key limitations or possible biases in the dataset and model for performance, preparation needs or stress category?"
+17,Student Stress Level Classification and Psychological Factor,Phase 5 — Final Project Report,5,What specific future improvement would most increase the reliability or practical usefulness of this project?
+17,Student Stress Level Classification and Psychological Factor,Phase 6 — Presentation,1,"Summarise “Student Stress Level Classification and Psychological Factor” in one minute: problem, data, method and main result."
+17,Student Stress Level Classification and Psychological Factor,Phase 6 — Presentation,2,Which visual would you use to explain the most important finding about student learning and performance data to a non-technical audience?
+17,Student Stress Level Classification and Psychological Factor,Phase 6 — Presentation,3,"How would you explain the model's output for performance, preparation needs or stress category without overstating its certainty?"
+17,Student Stress Level Classification and Psychological Factor,Phase 6 — Presentation,4,"What is the strongest evidence that your solution works, and what result or limitation should the audience know?"
+17,Student Stress Level Classification and Psychological Factor,Phase 6 — Presentation,5,"If you had one additional week, which improvement would you demonstrate first and how would you measure its effect?"
+17,Student Stress Level Classification and Psychological Factor,Phase 7 — Viva & Demonstration,1,Demonstrate one complete example in “Student Stress Level Classification and Psychological Factor” from entering or selecting inputs to interpreting the model output.
+17,Student Stress Level Classification and Psychological Factor,Phase 7 — Viva & Demonstration,2,Walk through the data-processing steps that convert raw student learning and performance data records into model-ready features.
+17,Student Stress Level Classification and Psychological Factor,Phase 7 — Viva & Demonstration,3,Show how the application behaves when a required field is missing or an input is outside the range seen during training.
+17,Student Stress Level Classification and Psychological Factor,Phase 7 — Viva & Demonstration,4,Explain one incorrect prediction or failure case and how you would investigate and reduce similar errors.
+17,Student Stress Level Classification and Psychological Factor,Phase 7 — Viva & Demonstration,5,"What privacy, fairness, safety or operational concern is most important for this project, and what practical safeguard would you apply?"
+18,Prediction,Phase 1 — Problem Definition & EDA,1,The roster lists Group 18's title only as “Prediction”. What is the complete approved project title and the real-world problem it addresses?
+18,Prediction,Phase 1 — Problem Definition & EDA,2,"What is the exact prediction or analysis objective for Prediction, and how will you define success?"
+18,Prediction,Phase 1 — Problem Definition & EDA,3,"Which data source represents the project's application data, and what checks did you perform for reliability and permission to use it?"
+18,Prediction,Phase 1 — Problem Definition & EDA,4,"Which of these inputs are most relevant: relevant input variables, target fields, dates and source metadata? Explain why you selected them."
+18,Prediction,Phase 1 — Problem Definition & EDA,5,"What did your initial EDA reveal about missing values, outliers, class/target distribution, or important trends?"
+18,Prediction,Phase 2 — Methodology & Evaluation Metrics,1,"Why is the chosen ML task for “Prediction” classification, regression, forecasting, ranking, or another task?"
+18,Prediction,Phase 2 — Methodology & Evaluation Metrics,2,"How did you split the the project's application data dataset, and how did you prevent data leakage?"
+18,Prediction,Phase 2 — Methodology & Evaluation Metrics,3,"Which evaluation metrics best measure performance for the outcome defined in the project objective, and why are they appropriate?"
+18,Prediction,Phase 2 — Methodology & Evaluation Metrics,4,"What baseline did you establish before trying more complex models, and how does your proposed method compare?"
+18,Prediction,Phase 2 — Methodology & Evaluation Metrics,5,"How did you handle missing values, categorical fields, scaling, class imbalance, or date-related features in your pipeline?"
+18,Prediction,Phase 3 — Supervised Learning / Implementation,1,"Which supervised algorithm did you choose for “Prediction”, and why is it suitable for the outcome defined in the project objective?"
+18,Prediction,Phase 3 — Supervised Learning / Implementation,2,"Explain how your model uses relevant input variables, target fields, dates and source metadata to produce its output."
+18,Prediction,Phase 3 — Supervised Learning / Implementation,3,"Which features had the strongest influence on the prediction, and how did you verify that influence?"
+18,Prediction,Phase 3 — Supervised Learning / Implementation,4,"What were the training and test results for your main metrics, and what do those values mean for this project?"
+18,Prediction,Phase 3 — Supervised Learning / Implementation,5,"What did you do to detect overfitting and improve generalisation, such as cross-validation, regularisation or tuning?"
+18,Prediction,Phase 4 — Unsupervised Learning,1,"What useful customer, property, booking, player, student, or operational segments could clustering reveal in “Prediction”?"
+18,Prediction,Phase 4 — Unsupervised Learning,2,"Which unsupervised method (such as K-Means, hierarchical clustering or PCA) did you use or propose, and why?"
+18,Prediction,Phase 4 — Unsupervised Learning,3,How did you scale features and choose the number of clusters or components for this dataset?
+18,Prediction,Phase 4 — Unsupervised Learning,4,"How would you interpret and label the clusters in terms of patterns, outliers, subgroup differences and changing data conditions?"
+18,Prediction,Phase 4 — Unsupervised Learning,5,"If unsupervised learning is not implemented in your current version, how could it add value without replacing the main prediction task?"
+18,Prediction,Phase 5 — Final Project Report,1,"How does your report connect the problem statement, dataset, methodology and results for “Prediction”?"
+18,Prediction,Phase 5 — Final Project Report,2,"Which table, chart or EDA visual best supports your main conclusion about the project's application data, and why?"
+18,Prediction,Phase 5 — Final Project Report,3,"How did you document preprocessing, feature definitions, model settings and the experiment environment so another person can reproduce it?"
+18,Prediction,Phase 5 — Final Project Report,4,What are the key limitations or possible biases in the dataset and model for the outcome defined in the project objective?
+18,Prediction,Phase 5 — Final Project Report,5,What specific future improvement would most increase the reliability or practical usefulness of this project?
+18,Prediction,Phase 6 — Presentation,1,"Summarise “Prediction” in one minute: problem, data, method and main result."
+18,Prediction,Phase 6 — Presentation,2,Which visual would you use to explain the most important finding about the project's application data to a non-technical audience?
+18,Prediction,Phase 6 — Presentation,3,How would you explain the model's output for the outcome defined in the project objective without overstating its certainty?
+18,Prediction,Phase 6 — Presentation,4,"What is the strongest evidence that your solution works, and what result or limitation should the audience know?"
+18,Prediction,Phase 6 — Presentation,5,"If you had one additional week, which improvement would you demonstrate first and how would you measure its effect?"
+18,Prediction,Phase 7 — Viva & Demonstration,1,Demonstrate one complete example in “Prediction” from entering or selecting inputs to interpreting the model output.
+18,Prediction,Phase 7 — Viva & Demonstration,2,Walk through the data-processing steps that convert raw the project's application data records into model-ready features.
+18,Prediction,Phase 7 — Viva & Demonstration,3,Show how the application behaves when a required field is missing or an input is outside the range seen during training.
+18,Prediction,Phase 7 — Viva & Demonstration,4,Explain one incorrect prediction or failure case and how you would investigate and reduce similar errors.
+18,Prediction,Phase 7 — Viva & Demonstration,5,"What privacy, fairness, safety or operational concern is most important for this project, and what practical safeguard would you apply?"
+19,TRIP BUDDY,Phase 1 — Problem Definition & EDA,1,"What real-world problem does “TRIP BUDDY” solve, and who would use the solution?"
+19,TRIP BUDDY,Phase 1 — Problem Definition & EDA,2,"What is the exact prediction or analysis objective for TRIP BUDDY, and how will you define success?"
+19,TRIP BUDDY,Phase 1 — Problem Definition & EDA,3,"Which data source represents travel and booking data, and what checks did you perform for reliability and permission to use it?"
+19,TRIP BUDDY,Phase 1 — Problem Definition & EDA,4,"Which of these inputs are most relevant: destination, route, travel date, season, booking lead time and price? Explain why you selected them."
+19,TRIP BUDDY,Phase 1 — Problem Definition & EDA,5,"What did your initial EDA reveal about missing values, outliers, class/target distribution, or important trends?"
+19,TRIP BUDDY,Phase 2 — Methodology & Evaluation Metrics,1,"Why is the chosen ML task for “TRIP BUDDY” classification, regression, forecasting, ranking, or another task?"
+19,TRIP BUDDY,Phase 2 — Methodology & Evaluation Metrics,2,"How did you split the travel and booking data dataset, and how did you prevent data leakage?"
+19,TRIP BUDDY,Phase 2 — Methodology & Evaluation Metrics,3,"Which evaluation metrics best measure performance for booking conversion, trip preferences, flight fares or travel planning outcomes, and why are they appropriate?"
+19,TRIP BUDDY,Phase 2 — Methodology & Evaluation Metrics,4,"What baseline did you establish before trying more complex models, and how does your proposed method compare?"
+19,TRIP BUDDY,Phase 2 — Methodology & Evaluation Metrics,5,"How did you handle missing values, categorical fields, scaling, class imbalance, or date-related features in your pipeline?"
+19,TRIP BUDDY,Phase 3 — Supervised Learning / Implementation,1,"Which supervised algorithm did you choose for “TRIP BUDDY”, and why is it suitable for booking conversion, trip preferences, flight fares or travel planning outcomes?"
+19,TRIP BUDDY,Phase 3 — Supervised Learning / Implementation,2,"Explain how your model uses destination, route, travel date, season, booking lead time and price to produce its output."
+19,TRIP BUDDY,Phase 3 — Supervised Learning / Implementation,3,"Which features had the strongest influence on the prediction, and how did you verify that influence?"
+19,TRIP BUDDY,Phase 3 — Supervised Learning / Implementation,4,"What were the training and test results for your main metrics, and what do those values mean for this project?"
+19,TRIP BUDDY,Phase 3 — Supervised Learning / Implementation,5,"What did you do to detect overfitting and improve generalisation, such as cross-validation, regularisation or tuning?"
+19,TRIP BUDDY,Phase 4 — Unsupervised Learning,1,"What useful customer, property, booking, player, student, or operational segments could clustering reveal in “TRIP BUDDY”?"
+19,TRIP BUDDY,Phase 4 — Unsupervised Learning,2,"Which unsupervised method (such as K-Means, hierarchical clustering or PCA) did you use or propose, and why?"
+19,TRIP BUDDY,Phase 4 — Unsupervised Learning,3,How did you scale features and choose the number of clusters or components for this dataset?
+19,TRIP BUDDY,Phase 4 — Unsupervised Learning,4,"How would you interpret and label the clusters in terms of availability, seasonality, demand peaks and changing travel conditions?"
+19,TRIP BUDDY,Phase 4 — Unsupervised Learning,5,"If unsupervised learning is not implemented in your current version, how could it add value without replacing the main prediction task?"
+19,TRIP BUDDY,Phase 5 — Final Project Report,1,"How does your report connect the problem statement, dataset, methodology and results for “TRIP BUDDY”?"
+19,TRIP BUDDY,Phase 5 — Final Project Report,2,"Which table, chart or EDA visual best supports your main conclusion about travel and booking data, and why?"
+19,TRIP BUDDY,Phase 5 — Final Project Report,3,"How did you document preprocessing, feature definitions, model settings and the experiment environment so another person can reproduce it?"
+19,TRIP BUDDY,Phase 5 — Final Project Report,4,"What are the key limitations or possible biases in the dataset and model for booking conversion, trip preferences, flight fares or travel planning outcomes?"
+19,TRIP BUDDY,Phase 5 — Final Project Report,5,What specific future improvement would most increase the reliability or practical usefulness of this project?
+19,TRIP BUDDY,Phase 6 — Presentation,1,"Summarise “TRIP BUDDY” in one minute: problem, data, method and main result."
+19,TRIP BUDDY,Phase 6 — Presentation,2,Which visual would you use to explain the most important finding about travel and booking data to a non-technical audience?
+19,TRIP BUDDY,Phase 6 — Presentation,3,"How would you explain the model's output for booking conversion, trip preferences, flight fares or travel planning outcomes without overstating its certainty?"
+19,TRIP BUDDY,Phase 6 — Presentation,4,"What is the strongest evidence that your solution works, and what result or limitation should the audience know?"
+19,TRIP BUDDY,Phase 6 — Presentation,5,"If you had one additional week, which improvement would you demonstrate first and how would you measure its effect?"
+19,TRIP BUDDY,Phase 7 — Viva & Demonstration,1,Demonstrate one complete example in “TRIP BUDDY” from entering or selecting inputs to interpreting the model output.
+19,TRIP BUDDY,Phase 7 — Viva & Demonstration,2,Walk through the data-processing steps that convert raw travel and booking data records into model-ready features.
+19,TRIP BUDDY,Phase 7 — Viva & Demonstration,3,Show how the application behaves when a required field is missing or an input is outside the range seen during training.
+19,TRIP BUDDY,Phase 7 — Viva & Demonstration,4,Explain one incorrect prediction or failure case and how you would investigate and reduce similar errors.
+19,TRIP BUDDY,Phase 7 — Viva & Demonstration,5,"What privacy, fairness, safety or operational concern is most important for this project, and what practical safeguard would you apply?"
+20,IPL Match Prediction,Phase 1 — Problem Definition & EDA,1,"What real-world problem does “IPL Match Prediction” solve, and who would use the solution?"
+20,IPL Match Prediction,Phase 1 — Problem Definition & EDA,2,"What is the exact prediction or analysis objective for IPL Match Prediction, and how will you define success?"
+20,IPL Match Prediction,Phase 1 — Problem Definition & EDA,3,"Which data source represents cricket match and IPL data, and what checks did you perform for reliability and permission to use it?"
+20,IPL Match Prediction,Phase 1 — Problem Definition & EDA,4,"Which of these inputs are most relevant: teams, venue, toss, innings score, wickets, overs, player form and conditions? Explain why you selected them."
+20,IPL Match Prediction,Phase 1 — Problem Definition & EDA,5,"What did your initial EDA reveal about missing values, outliers, class/target distribution, or important trends?"
+20,IPL Match Prediction,Phase 2 — Methodology & Evaluation Metrics,1,"Why is the chosen ML task for “IPL Match Prediction” classification, regression, forecasting, ranking, or another task?"
+20,IPL Match Prediction,Phase 2 — Methodology & Evaluation Metrics,2,"How did you split the cricket match and IPL data dataset, and how did you prevent data leakage?"
+20,IPL Match Prediction,Phase 2 — Methodology & Evaluation Metrics,3,"Which evaluation metrics best measure performance for match outcome or a clearly defined match-state prediction, and why are they appropriate?"
+20,IPL Match Prediction,Phase 2 — Methodology & Evaluation Metrics,4,"What baseline did you establish before trying more complex models, and how does your proposed method compare?"
+20,IPL Match Prediction,Phase 2 — Methodology & Evaluation Metrics,5,"How did you handle missing values, categorical fields, scaling, class imbalance, or date-related features in your pipeline?"
+20,IPL Match Prediction,Phase 3 — Supervised Learning / Implementation,1,"Which supervised algorithm did you choose for “IPL Match Prediction”, and why is it suitable for match outcome or a clearly defined match-state prediction?"
+20,IPL Match Prediction,Phase 3 — Supervised Learning / Implementation,2,"Explain how your model uses teams, venue, toss, innings score, wickets, overs, player form and conditions to produce its output."
+20,IPL Match Prediction,Phase 3 — Supervised Learning / Implementation,3,"Which features had the strongest influence on the prediction, and how did you verify that influence?"
+20,IPL Match Prediction,Phase 3 — Supervised Learning / Implementation,4,"What were the training and test results for your main metrics, and what do those values mean for this project?"
+20,IPL Match Prediction,Phase 3 — Supervised Learning / Implementation,5,"What did you do to detect overfitting and improve generalisation, such as cross-validation, regularisation or tuning?"
+20,IPL Match Prediction,Phase 4 — Unsupervised Learning,1,"What useful customer, property, booking, player, student, or operational segments could clustering reveal in “IPL Match Prediction”?"
+20,IPL Match Prediction,Phase 4 — Unsupervised Learning,2,"Which unsupervised method (such as K-Means, hierarchical clustering or PCA) did you use or propose, and why?"
+20,IPL Match Prediction,Phase 4 — Unsupervised Learning,3,How did you scale features and choose the number of clusters or components for this dataset?
+20,IPL Match Prediction,Phase 4 — Unsupervised Learning,4,"How would you interpret and label the clusters in terms of team/venue patterns, match situations and changing player form?"
+20,IPL Match Prediction,Phase 4 — Unsupervised Learning,5,"If unsupervised learning is not implemented in your current version, how could it add value without replacing the main prediction task?"
+20,IPL Match Prediction,Phase 5 — Final Project Report,1,"How does your report connect the problem statement, dataset, methodology and results for “IPL Match Prediction”?"
+20,IPL Match Prediction,Phase 5 — Final Project Report,2,"Which table, chart or EDA visual best supports your main conclusion about cricket match and IPL data, and why?"
+20,IPL Match Prediction,Phase 5 — Final Project Report,3,"How did you document preprocessing, feature definitions, model settings and the experiment environment so another person can reproduce it?"
+20,IPL Match Prediction,Phase 5 — Final Project Report,4,What are the key limitations or possible biases in the dataset and model for match outcome or a clearly defined match-state prediction?
+20,IPL Match Prediction,Phase 5 — Final Project Report,5,What specific future improvement would most increase the reliability or practical usefulness of this project?
+20,IPL Match Prediction,Phase 6 — Presentation,1,"Summarise “IPL Match Prediction” in one minute: problem, data, method and main result."
+20,IPL Match Prediction,Phase 6 — Presentation,2,Which visual would you use to explain the most important finding about cricket match and IPL data to a non-technical audience?
+20,IPL Match Prediction,Phase 6 — Presentation,3,How would you explain the model's output for match outcome or a clearly defined match-state prediction without overstating its certainty?
+20,IPL Match Prediction,Phase 6 — Presentation,4,"What is the strongest evidence that your solution works, and what result or limitation should the audience know?"
+20,IPL Match Prediction,Phase 6 — Presentation,5,"If you had one additional week, which improvement would you demonstrate first and how would you measure its effect?"
+20,IPL Match Prediction,Phase 7 — Viva & Demonstration,1,Demonstrate one complete example in “IPL Match Prediction” from entering or selecting inputs to interpreting the model output.
+20,IPL Match Prediction,Phase 7 — Viva & Demonstration,2,Walk through the data-processing steps that convert raw cricket match and IPL data records into model-ready features.
+20,IPL Match Prediction,Phase 7 — Viva & Demonstration,3,Show how the application behaves when a required field is missing or an input is outside the range seen during training.
+20,IPL Match Prediction,Phase 7 — Viva & Demonstration,4,Explain one incorrect prediction or failure case and how you would investigate and reduce similar errors.
+20,IPL Match Prediction,Phase 7 — Viva & Demonstration,5,"What privacy, fairness, safety or operational concern is most important for this project, and what practical safeguard would you apply?"
+21,Machine Learning Project (title not confirmed),Phase 1 — Problem Definition & EDA,1,"The uploaded roster does not confirm Group 21's exact title. What specific real-world problem does your chosen ML project solve, and who is the intended user?"
+21,Machine Learning Project (title not confirmed),Phase 1 — Problem Definition & EDA,2,"Since Group 21's title is unconfirmed in the roster, state your exact target variable and define a measurable success criterion."
+21,Machine Learning Project (title not confirmed),Phase 1 — Problem Definition & EDA,3,"Which data source represents the project's application data, and what checks did you perform for reliability and permission to use it?"
+21,Machine Learning Project (title not confirmed),Phase 1 — Problem Definition & EDA,4,"Which of these inputs are most relevant: relevant input variables, target fields, dates and source metadata? Explain why you selected them."
+21,Machine Learning Project (title not confirmed),Phase 1 — Problem Definition & EDA,5,"What did your initial EDA reveal about missing values, outliers, class/target distribution, or important trends?"
+21,Machine Learning Project (title not confirmed),Phase 2 — Methodology & Evaluation Metrics,1,"Given that Group 21's exact title is not confirmed in the uploaded roster, explain how your selected method supports your stated project objective."
+21,Machine Learning Project (title not confirmed),Phase 2 — Methodology & Evaluation Metrics,2,"How did you split the the project's application data dataset, and how did you prevent data leakage?"
+21,Machine Learning Project (title not confirmed),Phase 2 — Methodology & Evaluation Metrics,3,"Which evaluation metrics best measure performance for the outcome defined in the project objective, and why are they appropriate?"
+21,Machine Learning Project (title not confirmed),Phase 2 — Methodology & Evaluation Metrics,4,"What baseline did you establish before trying more complex models, and how does your proposed method compare?"
+21,Machine Learning Project (title not confirmed),Phase 2 — Methodology & Evaluation Metrics,5,"How did you handle missing values, categorical fields, scaling, class imbalance, or date-related features in your pipeline?"
+21,Machine Learning Project (title not confirmed),Phase 3 — Supervised Learning / Implementation,1,"Given that Group 21's exact title is not confirmed in the uploaded roster, explain how your selected method supports your stated project objective."
+21,Machine Learning Project (title not confirmed),Phase 3 — Supervised Learning / Implementation,2,"Explain how your model uses relevant input variables, target fields, dates and source metadata to produce its output."
+21,Machine Learning Project (title not confirmed),Phase 3 — Supervised Learning / Implementation,3,"Which features had the strongest influence on the prediction, and how did you verify that influence?"
+21,Machine Learning Project (title not confirmed),Phase 3 — Supervised Learning / Implementation,4,"What were the training and test results for your main metrics, and what do those values mean for this project?"
+21,Machine Learning Project (title not confirmed),Phase 3 — Supervised Learning / Implementation,5,"What did you do to detect overfitting and improve generalisation, such as cross-validation, regularisation or tuning?"
+21,Machine Learning Project (title not confirmed),Phase 4 — Unsupervised Learning,1,"Given that Group 21's exact title is not confirmed in the uploaded roster, explain how your selected method supports your stated project objective."
+21,Machine Learning Project (title not confirmed),Phase 4 — Unsupervised Learning,2,"Which unsupervised method (such as K-Means, hierarchical clustering or PCA) did you use or propose, and why?"
+21,Machine Learning Project (title not confirmed),Phase 4 — Unsupervised Learning,3,How did you scale features and choose the number of clusters or components for this dataset?
+21,Machine Learning Project (title not confirmed),Phase 4 — Unsupervised Learning,4,"How would you interpret and label the clusters in terms of patterns, outliers, subgroup differences and changing data conditions?"
+21,Machine Learning Project (title not confirmed),Phase 4 — Unsupervised Learning,5,"If unsupervised learning is not implemented in your current version, how could it add value without replacing the main prediction task?"
+21,Machine Learning Project (title not confirmed),Phase 5 — Final Project Report,1,"Given that Group 21's exact title is not confirmed in the uploaded roster, explain how your selected method supports your stated project objective."
+21,Machine Learning Project (title not confirmed),Phase 5 — Final Project Report,2,"Which table, chart or EDA visual best supports your main conclusion about the project's application data, and why?"
+21,Machine Learning Project (title not confirmed),Phase 5 — Final Project Report,3,"How did you document preprocessing, feature definitions, model settings and the experiment environment so another person can reproduce it?"
+21,Machine Learning Project (title not confirmed),Phase 5 — Final Project Report,4,What are the key limitations or possible biases in the dataset and model for the outcome defined in the project objective?
+21,Machine Learning Project (title not confirmed),Phase 5 — Final Project Report,5,What specific future improvement would most increase the reliability or practical usefulness of this project?
+21,Machine Learning Project (title not confirmed),Phase 6 — Presentation,1,"Given that Group 21's exact title is not confirmed in the uploaded roster, explain how your selected method supports your stated project objective."
+21,Machine Learning Project (title not confirmed),Phase 6 — Presentation,2,Which visual would you use to explain the most important finding about the project's application data to a non-technical audience?
+21,Machine Learning Project (title not confirmed),Phase 6 — Presentation,3,How would you explain the model's output for the outcome defined in the project objective without overstating its certainty?
+21,Machine Learning Project (title not confirmed),Phase 6 — Presentation,4,"What is the strongest evidence that your solution works, and what result or limitation should the audience know?"
+21,Machine Learning Project (title not confirmed),Phase 6 — Presentation,5,"If you had one additional week, which improvement would you demonstrate first and how would you measure its effect?"
+21,Machine Learning Project (title not confirmed),Phase 7 — Viva & Demonstration,1,"Given that Group 21's exact title is not confirmed in the uploaded roster, explain how your selected method supports your stated project objective."
+21,Machine Learning Project (title not confirmed),Phase 7 — Viva & Demonstration,2,Walk through the data-processing steps that convert raw the project's application data records into model-ready features.
+21,Machine Learning Project (title not confirmed),Phase 7 — Viva & Demonstration,3,Show how the application behaves when a required field is missing or an input is outside the range seen during training.
+21,Machine Learning Project (title not confirmed),Phase 7 — Viva & Demonstration,4,Explain one incorrect prediction or failure case and how you would investigate and reduce similar errors.
+21,Machine Learning Project (title not confirmed),Phase 7 — Viva & Demonstration,5,"What privacy, fairness, safety or operational concern is most important for this project, and what practical safeguard would you apply?"
+22,IPL Auction Predictor,Phase 1 — Problem Definition & EDA,1,"What real-world problem does “IPL Auction Predictor” solve, and who would use the solution?"
+22,IPL Auction Predictor,Phase 1 — Problem Definition & EDA,2,"What is the exact prediction or analysis objective for IPL Auction Predictor, and how will you define success?"
+22,IPL Auction Predictor,Phase 1 — Problem Definition & EDA,3,"Which data source represents IPL player auction data, and what checks did you perform for reliability and permission to use it?"
+22,IPL Auction Predictor,Phase 1 — Problem Definition & EDA,4,"Which of these inputs are most relevant: player role, recent performance, age, team needs, availability and past auction price? Explain why you selected them."
+22,IPL Auction Predictor,Phase 1 — Problem Definition & EDA,5,"What did your initial EDA reveal about missing values, outliers, class/target distribution, or important trends?"
+22,IPL Auction Predictor,Phase 2 — Methodology & Evaluation Metrics,1,"Why is the chosen ML task for “IPL Auction Predictor” classification, regression, forecasting, ranking, or another task?"
+22,IPL Auction Predictor,Phase 2 — Methodology & Evaluation Metrics,2,"How did you split the IPL player auction data dataset, and how did you prevent data leakage?"
+22,IPL Auction Predictor,Phase 2 — Methodology & Evaluation Metrics,3,"Which evaluation metrics best measure performance for player price band, auction demand or likely bidding value, and why are they appropriate?"
+22,IPL Auction Predictor,Phase 2 — Methodology & Evaluation Metrics,4,"What baseline did you establish before trying more complex models, and how does your proposed method compare?"
+22,IPL Auction Predictor,Phase 2 — Methodology & Evaluation Metrics,5,"How did you handle missing values, categorical fields, scaling, class imbalance, or date-related features in your pipeline?"
+22,IPL Auction Predictor,Phase 3 — Supervised Learning / Implementation,1,"Which supervised algorithm did you choose for “IPL Auction Predictor”, and why is it suitable for player price band, auction demand or likely bidding value?"
+22,IPL Auction Predictor,Phase 3 — Supervised Learning / Implementation,2,"Explain how your model uses player role, recent performance, age, team needs, availability and past auction price to produce its output."
+22,IPL Auction Predictor,Phase 3 — Supervised Learning / Implementation,3,"Which features had the strongest influence on the prediction, and how did you verify that influence?"
+22,IPL Auction Predictor,Phase 3 — Supervised Learning / Implementation,4,"What were the training and test results for your main metrics, and what do those values mean for this project?"
+22,IPL Auction Predictor,Phase 3 — Supervised Learning / Implementation,5,"What did you do to detect overfitting and improve generalisation, such as cross-validation, regularisation or tuning?"
+22,IPL Auction Predictor,Phase 4 — Unsupervised Learning,1,"What useful customer, property, booking, player, student, or operational segments could clustering reveal in “IPL Auction Predictor”?"
+22,IPL Auction Predictor,Phase 4 — Unsupervised Learning,2,"Which unsupervised method (such as K-Means, hierarchical clustering or PCA) did you use or propose, and why?"
+22,IPL Auction Predictor,Phase 4 — Unsupervised Learning,3,How did you scale features and choose the number of clusters or components for this dataset?
+22,IPL Auction Predictor,Phase 4 — Unsupervised Learning,4,"How would you interpret and label the clusters in terms of team composition, player-role clusters and changing auction strategy?"
+22,IPL Auction Predictor,Phase 4 — Unsupervised Learning,5,"If unsupervised learning is not implemented in your current version, how could it add value without replacing the main prediction task?"
+22,IPL Auction Predictor,Phase 5 — Final Project Report,1,"How does your report connect the problem statement, dataset, methodology and results for “IPL Auction Predictor”?"
+22,IPL Auction Predictor,Phase 5 — Final Project Report,2,"Which table, chart or EDA visual best supports your main conclusion about IPL player auction data, and why?"
+22,IPL Auction Predictor,Phase 5 — Final Project Report,3,"How did you document preprocessing, feature definitions, model settings and the experiment environment so another person can reproduce it?"
+22,IPL Auction Predictor,Phase 5 — Final Project Report,4,"What are the key limitations or possible biases in the dataset and model for player price band, auction demand or likely bidding value?"
+22,IPL Auction Predictor,Phase 5 — Final Project Report,5,What specific future improvement would most increase the reliability or practical usefulness of this project?
+22,IPL Auction Predictor,Phase 6 — Presentation,1,"Summarise “IPL Auction Predictor” in one minute: problem, data, method and main result."
+22,IPL Auction Predictor,Phase 6 — Presentation,2,Which visual would you use to explain the most important finding about IPL player auction data to a non-technical audience?
+22,IPL Auction Predictor,Phase 6 — Presentation,3,"How would you explain the model's output for player price band, auction demand or likely bidding value without overstating its certainty?"
+22,IPL Auction Predictor,Phase 6 — Presentation,4,"What is the strongest evidence that your solution works, and what result or limitation should the audience know?"
+22,IPL Auction Predictor,Phase 6 — Presentation,5,"If you had one additional week, which improvement would you demonstrate first and how would you measure its effect?"
+22,IPL Auction Predictor,Phase 7 — Viva & Demonstration,1,Demonstrate one complete example in “IPL Auction Predictor” from entering or selecting inputs to interpreting the model output.
+22,IPL Auction Predictor,Phase 7 — Viva & Demonstration,2,Walk through the data-processing steps that convert raw IPL player auction data records into model-ready features.
+22,IPL Auction Predictor,Phase 7 — Viva & Demonstration,3,Show how the application behaves when a required field is missing or an input is outside the range seen during training.
+22,IPL Auction Predictor,Phase 7 — Viva & Demonstration,4,Explain one incorrect prediction or failure case and how you would investigate and reduce similar errors.
+22,IPL Auction Predictor,Phase 7 — Viva & Demonstration,5,"What privacy, fairness, safety or operational concern is most important for this project, and what practical safeguard would you apply?"

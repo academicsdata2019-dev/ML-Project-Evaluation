@@ -113,6 +113,49 @@ def adjust_mark_widget(widget_key, delta, max_mark):
     st.session_state[widget_key] = max(0, min(int(max_mark), current + int(delta)))
 
 
+def render_phase_total_control(widget_key, max_mark, label):
+    """Editable phase total with red decrement on the left and green increment on the right."""
+    current = int(st.session_state.get(widget_key, 0))
+    current = max(0, min(int(max_mark), current))
+    st.session_state.setdefault(widget_key, current)
+    safe_key = "".join(ch if ch.isalnum() or ch in "_-" else "_" for ch in widget_key)
+    st.markdown("""<style>
+    div[class*="st-key-phase_minus_" ] button {background:#fff1f0!important;color:#dc2626!important;border:1px solid #f87171!important;font-weight:800!important;min-height:2.35rem!important;padding:0!important}
+    div[class*="st-key-phase_plus_" ] button {background:#e8fff0!important;color:#15803d!important;border:1px solid #22c55e!important;font-weight:800!important;min-height:2.35rem!important;padding:0!important}
+    div[class*="st-key-phase_mark_" ] input {text-align:center!important;font-weight:700!important;color:#12345b!important;background:#f0f3f7!important}
+    div[class*="st-key-phase_mark_" ] input::-webkit-inner-spin-button,
+    div[class*="st-key-phase_mark_" ] input::-webkit-outer-spin-button {-webkit-appearance:none;margin:0}
+    div[class*="st-key-phase_mark_" ] input[type=number] {-moz-appearance:textfield}
+    /* Hide Streamlit's built-in number-input +/- controls; only the two outer buttons remain. */
+    div[class*="st-key-phase_mark_"] button,
+    div[class*="st-key-phase_mark_"] [data-testid="stNumberInputStepDown"],
+    div[class*="st-key-phase_mark_"] [data-testid="stNumberInputStepUp"],
+    div[class*="st-key-phase_mark_"] button[aria-label*="Decrease"],
+    div[class*="st-key-phase_mark_"] button[aria-label*="Increase"] {display:none !important;}
+    div[class*="st-key-phase_minus_"] button, div[class*="st-key-phase_plus_"] button {
+        display:flex !important; align-items:center !important; justify-content:center !important;
+        min-width:2.35rem !important; width:2.35rem !important; height:2.35rem !important;
+        font-size:1.25rem !important; font-weight:900 !important; line-height:1 !important;
+    }
+    </style>""", unsafe_allow_html=True)
+    minus_col, mark_col, plus_col = st.columns([0.55, 2.2, 0.55], gap="small", vertical_alignment="center")
+    with minus_col:
+        with st.container(key=f"phase_minus_{safe_key}"):
+            st.button("−", key=f"{widget_key}_decrement", help=f"Decrease {label}", use_container_width=True,
+                      disabled=int(st.session_state[widget_key]) <= 0,
+                      on_click=adjust_mark_widget, args=(widget_key, -1, max_mark))
+    with mark_col:
+        with st.container(key=f"phase_mark_{safe_key}"):
+            st.number_input(label, min_value=0, max_value=int(max_mark), step=1,
+                            key=widget_key, label_visibility="collapsed")
+    with plus_col:
+        with st.container(key=f"phase_plus_{safe_key}"):
+            st.button("+", key=f"{widget_key}_increment", help=f"Increase {label}", use_container_width=True,
+                      disabled=int(st.session_state[widget_key]) >= int(max_mark),
+                      on_click=adjust_mark_widget, args=(widget_key, 1, max_mark))
+    return int(st.session_state[widget_key])
+
+
 def render_phase_cards(state_key, include_final=True):
     """Render all evaluation components in one compact, single-line navigation row."""
     labels = ["Problem & EDA", "Methodology", "Implementation", "Unsupervised", "Report", "Presentation", "Viva"]
@@ -853,7 +896,7 @@ st.markdown("""<style>
 .stNumberInput input{text-align:center !important;font-weight:750 !important;font-size:16px !important;color:#152b55 !important}
 .stNumberInput button{min-height:36px !important}
 
-/* High-contrast decrement/increment controls: plain text glyphs avoid emoji rendering issues. */
+/* High-contrast custom decrement/increment controls. Native number-input +/- buttons are hidden in the phase-total widget. */
 div[class*="st-key-minus_"] [data-testid="stButton"] > button {
   min-width: 36px !important; min-height: 40px !important; height: 40px !important;
   padding: 0 !important; border: 1px solid #dc2626 !important; border-radius: 10px !important;
@@ -1523,9 +1566,8 @@ elif page=="Project Group Details":
                             with col:
                                 st.markdown(f"**{html.escape(bulk_name)}**")
                                 st.caption(f"Roll {html.escape(bulk_roll)}")
-                                entered_total = st.number_input(
-                                    f"Phase total for {bulk_name}", min_value=0, max_value=int(bulk_comp["max"]), step=1,
-                                    key=total_key, label_visibility="collapsed"
+                                entered_total = render_phase_total_control(
+                                    total_key, int(bulk_comp["max"]), f"Phase total for {bulk_name}"
                                 )
                             bulk_evaluations[bulk_roll].setdefault("phase_totals", {})[bulk_comp["name"]] = int(entered_total)
                         
@@ -1618,10 +1660,8 @@ elif page=="Project Group Details":
                         saved_total = int(phase_total(ev, comp["name"]))
                         if phase_key not in st.session_state:
                             st.session_state[phase_key] = saved_total
-                        entered_phase_total = st.number_input(
-                            f"Current phase total (out of {comp['max']})",
-                            min_value=0, max_value=int(comp["max"]), step=1,
-                            key=phase_key
+                        entered_phase_total = render_phase_total_control(
+                            phase_key, int(comp["max"]), f"Current phase total (out of {comp['max']})"
                         )
                         ev.setdefault("phase_totals", {})[comp["name"]] = int(entered_phase_total)
                         subtotal = int(entered_phase_total)

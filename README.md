@@ -91,3 +91,6 @@ The Records & Export page displays each student's marks out of 100 and the half-
 
 ## Phase-total evaluation workflow
 Faculty enter one editable total per student for each evaluation phase. Individual criteria and their maximum marks remain visible as read-only assessment guidance; criterion-level increment/decrement controls have been removed. Existing criterion marks are migrated to their summed phase total when the evaluation is first loaded, and future marks are saved as phase totals. Class marksheets use the phase totals and calculate the internal score as half of the total out of 100.
+
+## Editable phase-total stepper
+The phase-total field now has a red decrement button on the left, an editable numeric marks field in the center, and a green increment button on the right. The buttons respect the phase minimum (0) and maximum marks. This control is available in both individual-student evaluation and the group-wide phase-total entry view.
